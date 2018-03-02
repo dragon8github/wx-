@@ -5,7 +5,7 @@
   </view>
 
   <view class="menu-list">
-    <block wx:for="{{menuList}}" wx:for-item="menuItem">
+    <block wx:for="{{menuList}}" wx:for-item="menuItem" wx:key="unique">
       <view class="menu-item">
         <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
           <text class="menu-item-name">{{menuItem.name}}</text>
@@ -15,7 +15,7 @@
           </image>
         </view>
         <view class="menu-item-api-list {{menuItem.opened ? 'open' : 'close'}}">
-          <block wx:for="{{menuItem.APIList}}" wx:for-item="APIItem">
+          <block wx:for="{{menuItem.APIList}}" wx:for-item="APIItem" wx:key="unique">
             <navigator url="{{APIItem.url}}">
               <view class="menu-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
                 <view class="menu-item-api-item-text">
