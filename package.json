@@ -1,0 +1,20 @@
+{
+  "name": "wx-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create.js",
+  "scripts": {
+    "git": "git add . & git commit -m 123 & git push -u origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragon8github/wx-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragon8github/wx-app/issues"
+  },
+  "homepage": "https://github.com/dragon8github/wx-app#readme"
+}
