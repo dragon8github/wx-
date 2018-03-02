@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+
+<dialog id='dialog'
+title='我是标题'
+content='恭喜你，学会了小程序组件' 
+cancelText='知道了'
+confirm='谢谢你'
+bind:cancelEvent="_cancelEvent"
+bind:confirmEvent="_confirmEvent">
+</dialog>
+
+
+  <view class="userinfo">
+    <button bindtap='showdialog'>123</button>
+     <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> 
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
