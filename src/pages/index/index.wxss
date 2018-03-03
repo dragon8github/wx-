@@ -1,11 +1,23 @@
-.index {
-    
-}
+.banner {}
+.banner__city {}
+.city {}
+.city__image {}
+.city__text {}
 
-.index__element {
-    
-}
+.ad {}
+.ad__image {}
+.ad__text {}
 
-.index__element--modifier {
-    
-}
+.business {}
+.business__block {}
+.businessinfo {}
+.businessinfo__text {}
+.businessinfo__navigator {}
+.businessinfo__navigator--hover {}
+
+.process {}
+.process__text {}
+.process__view {}
+.processitem {}
+.processitem__image {}
+.processitem__text {}

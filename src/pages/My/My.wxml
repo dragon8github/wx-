@@ -1,3 +1,28 @@
 <view class="container My">
-    
+    <view class="banner">
+        <view class="userinfo">
+            <view class="userinfoleft">
+                <image class="userinfoleft__image"></image>
+            </view>
+            <view class="userinforight">
+                <text class="userinforight__name"></text>
+                <text class="userinforight__phone"></text>
+            </view>
+        </view>
+    </view>
+
+    <view class="list">
+        <view class="item">
+            <image class="item__borrow"></image>
+            <text class="item__text"></text>
+        </view>
+        <view class="item">
+            <image class="item__repay"></image>
+            <text class="item__text"></text>
+        </view>
+        <view class="item">
+            <image class="item__setting"></image>
+            <text class="item__text"></text>
+        </view>
+    </view>
 </view>

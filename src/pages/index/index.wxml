@@ -1,35 +1,63 @@
 <view class="container index">
+    
     <view class="banner">
-        <block>
-           <image></image>
-           <text></text>
-        </block>
+        <view class="banner__city">
+            <view class="city">
+                <image class="city__image"></image>
+                <text class="city__text"></text>
+            </view>
+        </view>
     </view>
+
     <view class="ad">
-        <image></image>
-        <text></text>
+        <image class="ad__image"></image>
+        <text class="ad__text"></text>
     </view>
+
     <view class="business">
-        <view>
-            <block>
-              <text>一点车贷</text>
-              <navigator url="/pages/CarBusinessInfo/CarBusinessInfo" hover-class="navigator-hover"> 了解更多 >> </navigator>
-            </block>
+        <view class="business__block">
+            <view class="businessinfo">
+                <text class="businessinfo__text">一点车贷</text>
+                <navigator 
+                    class="businessinfo__navigator"
+                    hover-class="businessinfo__navigator--hover" 
+                    url="/pages/CarBusinessInfo/CarBusinessInfo">
+                        了解更多 >>
+                </navigator>
+            </view>
         </view>
-        <view>
-            <block>
-              <text>鸿特微贷</text>
-              <navigator url="/pages/HouseBusinessInfo/HouseBusinessInfo" hover-class="navigator-hover"> 了解更多 >> </navigator>
-            </block>
+        <view class="business__block">
+            <view class="businessinfo">
+                <text class="businessinfo__text">鸿特微贷</text>
+                <navigator 
+                    class="businessinfo__navigator"
+                    hover-class="businessinfo__navigator--hover" 
+                    url="/pages/CarBusinessInfo/CarBusinessInfo">
+                        了解更多 >>
+                </navigator>
+            </view>
         </view>
     </view>
-    <view class="Process">
-        <text>业务流程</text>
-        <view>
-            <block><image></image> <text>线上申请</text></block>
-            <block><image></image> <text>电话回访</text></block>
-            <block><image></image> <text>线下服务</text></block>
-            <block><image></image> <text>快速放款</text></block>
+
+    <view class="process">
+        <text class="process__text">业务流程</text>
+        <view class="process__view">
+            <view class="processitem">
+                <image class="processitem__image"></image>
+                <text class="processitem__text">线上申请</text>
+            </view>
+            <view>
+                <image class="processitem__image"></image>
+                <text class="processitem__text">电话回访</text>
+            </view>
+            <view>
+                <image class="processitem__image"></image>
+                <text class="processitem__text">线下服务</text>
+            </view>
+            <view>
+                <image class="processitem__image"></image>
+                <text class="processitem__text">快速放款</text>
+            </view>
         </view>
     </view>
 </view>
