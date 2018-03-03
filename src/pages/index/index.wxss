@@ -1,23 +1,140 @@
-.banner {}
-.banner__city {}
-.city {}
-.city__image {}
-.city__text {}
+.banner {
+    width: 100%;
+    height: 460rpx;
+    
+    position: relative;
+}
 
-.ad {}
-.ad__image {}
-.ad__text {}
+.banner__image {
+    display: inline;
+}
 
-.business {}
-.business__block {}
+.city {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 20rpx;
+    display: flex;
+    align-items: center;
+}
+.city__image {
+    width: 54rpx;
+    height: 54rpx;
+    display: inline-block;
+
+    margin-left: 29rpx;
+    margin-right: 10rpx;
+}
+
+.city__text {
+    font-size: 30rpx;
+    color: #ffffff;
+}
+
+.ad {
+    background-color: #ffffff;
+    height: 80rpx;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ad__image {
+    width: 54rpx;
+    height: 54rpx;
+
+    margin: 0 15rpx 0 25rpx;
+}
+.ad__text {
+    font-size: 24rpx;
+    color: #666666;
+}
+
+.business {
+    background: #fff;
+    margin: 14rpx auto;
+}
+
+.business__block {
+    height: 170rpx;
+
+    padding-left: 60rpx;
+    padding-right: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.business__block:first-child {
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
 .businessinfo {}
-.businessinfo__text {}
-.businessinfo__navigator {}
-.businessinfo__navigator--hover {}
 
-.process {}
-.process__text {}
-.process__view {}
-.processitem {}
-.processitem__image {}
-.processitem__text {}
+.businessinfo__text {
+    color: #434343;
+    font-size: 38rpx;
+    letter-spacing: 2rpx;
+}
+
+.businessinfo__more {
+    color: #999999;
+    font-size: 28rpx;
+    line-height: 250%;
+    letter-spacing: 2rpx;
+}
+
+.businessinfo__more--hover {
+   color: #0e6ae7;
+}
+
+.businessfast {}
+
+.businessfast__button {
+    width: 214rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 32rpx;
+    background-color: #0e6ae7;
+    color: #ffffff;
+}
+
+.process {
+    background-color: #ffffff;
+    height: 240rpx;
+    margin-bottom: 14rpx;
+    padding-bottom: 20rpx;
+}
+
+.process__text {
+    color: #222222;
+    text-align: center;
+    font-size: 27rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+
+.process__view {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.processitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.processitem__image {
+    width: 70rpx;
+    height: 70rpx;
+
+    margin-bottom: 17rpx;
+}
+
+.processitem__text {
+    color: #666666;
+    font-size: 24rpx;
+}

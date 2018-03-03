@@ -1,17 +1,16 @@
 <view class="container index">
     
     <view class="banner">
-        <view class="banner__city">
-            <view class="city">
-                <image class="city__image"></image>
-                <text class="city__text"></text>
-            </view>
+        <image class="banner__image" src='./../../image/index/banner.jpg'></image>
+        <view class="city">
+            <image class="city__image" src='./../../image/index/local.png'></image>
+            <text class="city__text">东莞市</text>
         </view>
     </view>
 
     <view class="ad">
-        <image class="ad__image"></image>
-        <text class="ad__text"></text>
+        <image class="ad__image" src="./../../image/index/ad.png"></image>
+        <text class="ad__text">李**成功借款20000元！</text>
     </view>
 
     <view class="business">
@@ -19,43 +18,49 @@
             <view class="businessinfo">
                 <text class="businessinfo__text">一点车贷</text>
                 <navigator 
-                    class="businessinfo__navigator"
-                    hover-class="businessinfo__navigator--hover" 
+                    class="businessinfo__more"
+                    hover-class="businessinfo__more--hover" 
                     url="/pages/CarBusinessInfo/CarBusinessInfo">
-                        了解更多 >>
+                        了解更多 >
                 </navigator>
+            </view>
+            <view class="businessfast">
+                <button class="businessfast__button">马上申请</button>
             </view>
         </view>
         <view class="business__block">
             <view class="businessinfo">
                 <text class="businessinfo__text">鸿特微贷</text>
                 <navigator 
-                    class="businessinfo__navigator"
-                    hover-class="businessinfo__navigator--hover" 
+                    class="businessinfo__more"
+                    hover-class="businessinfo__more--hover" 
                     url="/pages/CarBusinessInfo/CarBusinessInfo">
-                        了解更多 >>
+                        了解更多 >
                 </navigator>
+            </view>
+            <view class="businessfast">
+                <button class="businessfast__button">马上申请</button>
             </view>
         </view>
     </view>
 
     <view class="process">
-        <text class="process__text">业务流程</text>
+        <view class="process__text">业务流程</view>
         <view class="process__view">
             <view class="processitem">
-                <image class="processitem__image"></image>
+                <image class="processitem__image" src='./../../image/index/1.png'></image>
                 <text class="processitem__text">线上申请</text>
             </view>
-            <view>
-                <image class="processitem__image"></image>
+            <view class="processitem">
+                <image class="processitem__image" src='./../../image/index/2.png'></image>
                 <text class="processitem__text">电话回访</text>
             </view>
-            <view>
-                <image class="processitem__image"></image>
+            <view class="processitem">
+                <image class="processitem__image" src='./../../image/index/3.png'></image>
                 <text class="processitem__text">线下服务</text>
             </view>
-            <view>
-                <image class="processitem__image"></image>
+            <view class="processitem">
+                <image class="processitem__image" src='./../../image/index/4.png'></image>
                 <text class="processitem__text">快速放款</text>
             </view>
         </view>

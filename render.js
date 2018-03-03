@@ -113,6 +113,7 @@ function extractTemplate () {
 }
 
 extractTemplate();
+// TODO 干脆一点吧。把这两个功能分离出去
 renderPages();
 renderComponents();
 
