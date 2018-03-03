@@ -4,7 +4,7 @@
     width: 100%;
     min-height: 290rpx;
 
-    padding: 60rpx;
+    padding: 55rpx 60rpx;
     display: flex;
     justify-content: space-between;
 }
@@ -17,6 +17,7 @@
 .helpleft__service {
     color: #ffffff;
     font-size: 48rpx;
+    letter-spacing: 3rpx;
 }
 .helpleft__phone {
     color: #ffffff;

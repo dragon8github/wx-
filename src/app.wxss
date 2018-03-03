@@ -7,6 +7,10 @@ view, text, image {
     box-sizing: border-box;    
 }
 
+view, text {
+      font-family: 'PingFangSC-Regular', -apple-system-font,Helvetica Neue,Helvetica,"Microsoft YaHei",sans-serif;
+}
+
 .container {
 
 }
