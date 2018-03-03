@@ -42,7 +42,7 @@ function _renderPages (Path, f) {
         const filePath = path.join(Path, ff);
         var stat = fs.lstatSync(filePath);
         if (!stat.isDirectory() && f.indexOf('template')) {
-            compile(filePath, { title: f, name: f, isComponent: false })
+            compile(filePath, { title: f.toLocaleLowerCase(), name: f.toLocaleLowerCase(), isComponent: false })
             var fix = ff.substr(ff.lastIndexOf('.'));
             var rename = f + fix;
             fs.renameSync(path.join(Path, ff), path.join(Path, rename))
@@ -69,7 +69,7 @@ function _renderComponents (Path, f) {
         const filePath = path.join(Path, ff);
         var stat = fs.lstatSync(filePath);
         if (!stat.isDirectory() && f.indexOf('template')) {
-            compile(filePath, { name: f, isComponent: true })
+            compile(filePath, { name: f.toLocaleLowerCase(), isComponent: true })
             var fix = ff.substr(ff.lastIndexOf('.'));
             var rename = f + fix;
             fs.renameSync(path.join(Path, ff), path.join(Path, rename))

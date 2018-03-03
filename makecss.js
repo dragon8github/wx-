@@ -1,24 +1,27 @@
-// 读取指定文件的文本(wxml文件)
-// 正则表达式获取所有的class数组，不可重复，可以试试new Set，或者先获取再去重
-// 然后转换成css代码。
-
-
 const fs      = require('fs')
 const path    = require('path')
-const cheerio  = require('cheerio')
+const cheerio = require('cheerio')
+const yargs   = require('yargs')
+
+// 最好是使用--来，不然容易导致冲突
+const argv    = yargs.alias('n', 'name').alias('p', 'path').argv
 
 function readfile() {
-    var filepath = path.join(__dirname, 'src/pages/my/my.wxml');
-    var text = fs.readFileSync(filepath, {encoding:'utf-8'});
-    getClass(text);
+    if (argv.p) {
+        var filepath = path.join(__dirname, argv.p);
+        var text = fs.readFileSync(filepath, {encoding:'utf-8'});
+        getClass(text);
+    } else {
+        console.log("你缺少p参数，参考：node index.js -p src/index.wxml");
+    }
 }
 
 
 function getClass (text) {
     var classArr = [];
     let $ = cheerio.load(text)
-    $(".My [class]").each((index,element) => {
-        var className = $(element).attr("class");
+    $("[class]").each((index,element) => {
+        var className = $(element).attr("class").replace(/\s/g, ".");
         if (!classArr.includes(className)) {
             classArr.push(className)
         }
