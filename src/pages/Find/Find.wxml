@@ -1,24 +1,24 @@
 <view class="container find">
     <view class="help">
         <view class="helpleft">
-            <text class="helpleft__service"></text>
-            <text class="helpleft__phone"></text>
-            <text class="helpleft__time"></text>
+            <text class="helpleft__service">电话客服</text>
+            <text class="helpleft__phone">0769-22888877</text>
+            <text class="helpleft__time">服务时间：周一至周五9:00~18:00</text>
         </view>
         <view class="helpright">
-            <image class="helpright__image"></image>
+            <image class="helpright__image" src='./../../image/find/phone.png'></image>
         </view>
     </view>
 
     <view class="findcenter">
         <view class="introduce">
-            <image class="introduce__image"></image>
-            <text class="introduce__text"></text>
+            <image class="introduce__image" src="./../../image/find/fast.png"></image>
+            <text class="introduce__text">快速贷款</text>
         </view>
         <view class="findcenter__line"></view>
-        <view class="question">
-            <image class="question__image"></image>
-            <text class="question__text"></text>
+        <view class="introduce">
+            <image class="introduce__image" src="./../../image/find/help.png"></image>
+            <text class="introduce__text">快速贷款</text>
         </view>
     </view>
 </view>

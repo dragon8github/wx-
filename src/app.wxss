@@ -3,8 +3,8 @@ page {
   height:100%;
 }
 
-image {
-    
+view, text, image {
+    box-sizing: border-box;    
 }
 
 .container {
