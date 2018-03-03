@@ -1,4 +1,5 @@
-var items = ['item1', 'item2', 'item3', 'item4']
+var items = ['item1', 'item2', 'item3', 'item4'];
+
 var pageObject = {
   data: {
     actionSheetHidden: true,
@@ -14,7 +15,7 @@ var pageObject = {
       actionSheetHidden: !this.data.actionSheetHidden
     })
   }
-}
+};
 
 for (var i = 0; i < items.length; ++i) {
   (function(itemName) {
@@ -22,6 +23,6 @@ for (var i = 0; i < items.length; ++i) {
       console.log('click' + itemName, e)
     }
   })(items[i])
-}
+};
 
-Page(pageObject)
+Page(pageObject);

@@ -35,6 +35,6 @@ for (var i = 0; i < types.length; ++i) {
       this.setData(changedData)
     }
   })(types[i])
-}
+};
 
-Page(pageObject)
+Page(pageObject);

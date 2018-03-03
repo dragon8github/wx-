@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/dragon8github/wx-app/issues"
   },
-  "homepage": "https://github.com/dragon8github/wx-app#readme"
+  "homepage": "https://github.com/dragon8github/wx-app#readme",
+  "devDependencies": {
+    "ejs": "^2.5.7",
+    "extract-zip": "^1.6.6",
+    "yargs": "^11.0.0"
+  }
 }

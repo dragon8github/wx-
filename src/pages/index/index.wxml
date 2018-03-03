@@ -1,25 +1,35 @@
-<!--index.wxml-->
-<view class="container">
-
-<dialog id='dialog'
-title='我是标题'
-content='恭喜你，学会了小程序组件' 
-cancelText='知道了'
-confirm='谢谢你'
-bind:cancelEvent="_cancelEvent"
-bind:confirmEvent="_confirmEvent">
-</dialog>
-
-
-  <view class="userinfo">
-    <button bindtap='showdialog'>123</button>
-     <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> 
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block> -->
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="container index">
+    <view class="banner">
+        <block>
+           <image></image>
+           <text></text>
+        </block>
+    </view>
+    <view class="ad">
+        <image></image>
+        <text></text>
+    </view>
+    <view class="business">
+        <view>
+            <block>
+              <text>一点车贷</text>
+              <navigator url="/pages/CarBusinessInfo/CarBusinessInfo" hover-class="navigator-hover"> 了解更多 >> </navigator>
+            </block>
+        </view>
+        <view>
+            <block>
+              <text>鸿特微贷</text>
+              <navigator url="/pages/HouseBusinessInfo/HouseBusinessInfo" hover-class="navigator-hover"> 了解更多 >> </navigator>
+            </block>
+        </view>
+    </view>
+    <view class="Process">
+        <text>业务流程</text>
+        <view>
+            <block><image></image> <text>线上申请</text></block>
+            <block><image></image> <text>电话回访</text></block>
+            <block><image></image> <text>线下服务</text></block>
+            <block><image></image> <text>快速放款</text></block>
+        </view>
+    </view>
 </view>

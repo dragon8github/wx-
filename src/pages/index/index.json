@@ -1,5 +1,5 @@
 {
-  "usingComponents": {
-    "dialog": "/components/dialog/dialog"
-  } 
+    "usingComponents": {},
+    
+    "navigationBarTitleText": "首页"
 }

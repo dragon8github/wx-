@@ -1,7 +1,22 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/Find/Find",
+    "pages/My/My",
+    "pages/Borrow/Borrow",
+    "pages/BorrowProgress/BorrowProgress",
+    "pages/CarBusinessInfo/CarBusinessInfo",
+    "pages/CitySelect/CitySelect",
+    "pages/Fast/Fast",
+    "pages/ForgetPwd/ForgetPwd",
+    "pages/HouseBusinessInfo/HouseBusinessInfo",
+    "pages/Login/Login",
+    "pages/RegProtocol/RegProtocol",
+    "pages/Register/Register",
+    "pages/Repay/Repay",
+    "pages/RepayInfo/RepayInfo",
+    "pages/ResetPwd/ResetPwd",
+    "pages/Status/Status",
 
     "help/component/index",
     "help/component/component-pages/action-sheet/action-sheet",
@@ -78,13 +93,13 @@
         "text": "我的项目"
       },{
         "pagePath": "help/component/index",
-        "iconPath": "image/icon_component.png",
-        "selectedIconPath": "image/icon_component_HL.png",
+        "iconPath": "image/help/icon_component.png",
+        "selectedIconPath": "image/help/icon_component_HL.png",
         "text": "组件"
       },{
         "pagePath": "help/API/index/index",
-        "iconPath": "image/icon_API.png",
-        "selectedIconPath": "image/icon_API_HL.png",
+        "iconPath": "image/help/icon_API.png",
+        "selectedIconPath": "image/help/icon_API_HL.png",
         "text": "接口"
       }
     ]

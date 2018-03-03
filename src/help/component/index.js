@@ -1,7 +1,6 @@
 Page({
   data: {
-    list: [
-      {
+    list: [{
         id: 'view',
         name: '视图容器',
         open: false,

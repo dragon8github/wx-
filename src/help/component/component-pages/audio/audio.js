@@ -10,4 +10,4 @@ Page({
       method: 'pause'
     }
   }
-})
+});
