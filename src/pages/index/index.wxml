@@ -51,14 +51,29 @@
                 <image class="processitem__image" src='./../../image/index/1.png'></image>
                 <text class="processitem__text">线上申请</text>
             </view>
+
+            <view class="processitem">
+                <image class="processitem__arrow" src='./../../image/index/arrow.png'></image>
+            </view>
+
             <view class="processitem">
                 <image class="processitem__image" src='./../../image/index/2.png'></image>
                 <text class="processitem__text">电话回访</text>
             </view>
+
+            <view class="processitem">
+                <image class="processitem__arrow" src='./../../image/index/arrow.png'></image>
+            </view>
+
             <view class="processitem">
                 <image class="processitem__image" src='./../../image/index/3.png'></image>
                 <text class="processitem__text">线下服务</text>
             </view>
+
+            <view class="processitem">
+                <image class="processitem__arrow" src='./../../image/index/arrow.png'></image>
+            </view>
+
             <view class="processitem">
                 <image class="processitem__image" src='./../../image/index/4.png'></image>
                 <text class="processitem__text">快速放款</text>
