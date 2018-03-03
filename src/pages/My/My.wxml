@@ -1,28 +1,29 @@
 <view class="container my">
     <view class="banner">
+        <image class="banner__bg" src="./../../image/my/BG.png"></image>
         <view class="userinfo">
             <view class="userinfoleft">
-                <image class="userinfoleft__image"></image>
+                <image class="userinfoleft__head" src="./../../image/my/head.jpg"></image>
             </view>
             <view class="userinforight">
-                <text class="userinforight__name"></text>
-                <text class="userinforight__phone"></text>
+                <text class="userinforight__name">杨*颖</text>
+                <text class="userinforight__phone">13000000000</text>
             </view>
         </view>
     </view>
 
     <view class="list">
-        <view class="item">
-            <image class="item__borrow"></image>
-            <text class="item__text"></text>
+        <view class="cell">
+            <image class="cell__image" src="./../../image/my/borrow.png"></image>
+            <text class="cell__text">我的借款</text>
         </view>
-        <view class="item">
-            <image class="item__repay"></image>
-            <text class="item__text"></text>
+        <view class="cell">
+            <image class="cell__image" src="./../../image/my/repay.png"></image>
+            <text class="cell__text">我的还款</text>
         </view>
-        <view class="item">
-            <image class="item__setting"></image>
-            <text class="item__text"></text>
+        <view class="cell">
+            <image class="cell__image" src="./../../image/my/setting.png"></image>
+            <text class="cell__text">设置</text>
         </view>
     </view>
 </view>

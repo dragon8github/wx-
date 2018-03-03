@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/My/My",
     "pages/Find/Find",
     "pages/index/index",
-    "pages/My/My",
     "pages/Borrow/Borrow",
     "pages/BorrowProgress/BorrowProgress",
     "pages/CarBusinessInfo/CarBusinessInfo",

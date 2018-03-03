@@ -1,14 +1,60 @@
-.banner {}
-.userinfo {}
+.banner {
+    width: 100%;
+    height: 328rpx;
+
+    position: relative;
+}
+
+.banner__bg {
+    display: inline;
+}
+
+.userinfo {
+    color: #fff;
+
+    position: absolute;
+    bottom: 30rpx; 
+    left: 30rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .userinfoleft {}
-.userinfoleft__image {}
-.userinforight {}
+.userinfoleft__head {
+    border-radius: 100%;
+    border: 10rpx solid #b6cced;
+    margin-right: 45rpx;
+    height: 130rpx;
+    width: 130rpx;
+
+}
+.userinforight {
+    font-size: 32rpx;
+    height: 90rpx;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 .userinforight__name {}
 .userinforight__phone {}
 
 .list {}
-.item {}
-.item__borrow {}
-.item__text {}
-.item__repay {}
-.item__setting {}
+.cell {
+    background: #fff;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 28rpx;
+    
+    position: relative;
+}
+.cell__image {
+    height: 44rpx;
+    width: 44rpx;
+}
+
+.cell__text {
+    color: #222222;
+}
