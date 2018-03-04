@@ -1,3 +1,22 @@
-<view class="container cell">
-    
+ <view class="mint-cell">
+      <view class="mint-cell-mask" wx-if="Link"></view>
+      <view class="mint-cell-left">
+        <slot name="left"></slot>
+      </view>
+      <view class="mint-cell-wrapper">
+        <view class="mint-cell-title">
+          <slot name="icon"></slot>
+          <slot name="title"></slot>
+          <view class="mint-cell-text">{{ title }}</view>
+          <view wx-if="label" class="mint-cell-label">{{ label }}</view>
+        </view>
+        <view class="mint-cell-value" class="{{ isLink ? 'is-link' : '' }}">
+           <slot></slot>
+           <view>{{ value }}</view>
+        </view>
+        <view wx-if="Link" class="mint-cell-allow-right"></view>
+      </view>
+      <view class="mint-cell-right">
+        <slot name="right"></slot>
+      </view>
 </view>

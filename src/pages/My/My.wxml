@@ -6,11 +6,11 @@
                 <image class="userinfoleft__head" src="./../../image/my/head.jpg"></image>
             </view>
             <view class="userinforight">
-                <text class="userinforight__name">杨*颖</text>
-                <text class="userinforight__phone">13000000000</text>
+                <text class="userinforight__name">李钊鸿</text>
+                <text class="userinforight__phone">13713332652</text>
             </view>
         </view>
-    </view>
+    </view> 
 
     <view class="list">
         <view class="cell">
@@ -39,5 +39,10 @@
                 <text class="cell__title">设置</text>
             </view>
         </view>
+
+
     </view>
+
+    <cell title="标题文字" value="说明文字"></cell>
+    
 </view>

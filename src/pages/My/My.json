@@ -1,5 +1,7 @@
 {
-    "usingComponents": {},
+    "usingComponents": {
+        "cell": "/components/cell/cell"
+    },
 
     "navigationBarTitleText": "个人中心"
 
