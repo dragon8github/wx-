@@ -62,7 +62,6 @@ function renderComponents () {
     })
 }
 
-// TODO: 不需要参数f，直接通过Path截取最后一个既是文件夹的名字
 function _renderComponents (Path, f) {
     var filelist =  fs.readdirSync(Path)
     filelist.forEach(function (ff, i) {
@@ -88,7 +87,7 @@ function extractTemplate () {
                if (fileslist.length === 0) {
                    extract(path.join(__dirname, 'template/Page.zip'), {dir: Path}, function (err) {
                          // ... 
-                         // TODO: 在这里遍历文件夹中所有的文件然后进行渲染
+                        renderPages();
                    });
                }
            }
@@ -105,6 +104,7 @@ function extractTemplate () {
                if (fileslist.length === 0) {
                    extract(path.join(__dirname, 'template/Component.zip'), {dir: Path}, function (err) {
                        // ...
+                       renderComponents();
                    });
                }
            }
@@ -113,7 +113,6 @@ function extractTemplate () {
 }
 
 extractTemplate();
-// TODO 干脆一点吧。把这两个功能分离出去
 renderPages();
 renderComponents();
 

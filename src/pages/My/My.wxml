@@ -14,16 +14,30 @@
 
     <view class="list">
         <view class="cell">
-            <image class="cell__image" src="./../../image/my/borrow.png"></image>
-            <text class="cell__text">我的借款</text>
+            <view class="cell_image">
+                <image class="cell__icon" src="./../../image/my/borrow.png"></image>
+            </view>
+            <view class="cell__warp u-border-bottom">
+                <text class="cell__title">我的借款</text>
+            </view>
         </view>
+
         <view class="cell">
-            <image class="cell__image" src="./../../image/my/repay.png"></image>
-            <text class="cell__text">我的还款</text>
+            <view class="cell_image">
+                <image class="cell__icon" src="./../../image/my/repay.png"></image>
+            </view>
+            <view class="cell__warp u-border-bottom">
+                <text class="cell__title">我的还款</text>
+            </view>
         </view>
+
         <view class="cell">
-            <image class="cell__image" src="./../../image/my/setting.png"></image>
-            <text class="cell__text">设置</text>
+            <view class="cell_image">
+                <image class="cell__icon" src="./../../image/my/setting.png"></image>
+            </view>
+            <view class="cell__warp">
+                <text class="cell__title">设置</text>
+            </view>
         </view>
     </view>
 </view>

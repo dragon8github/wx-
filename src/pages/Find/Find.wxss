@@ -10,6 +10,9 @@
 }
 
 .helpleft {
+    letter-spacing: 3rpx;
+
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,7 +20,6 @@
 .helpleft__service {
     color: #ffffff;
     font-size: 48rpx;
-    letter-spacing: 3rpx;
 }
 .helpleft__phone {
     color: #ffffff;

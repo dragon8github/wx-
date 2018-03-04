@@ -42,19 +42,39 @@
 .userinforight__phone {}
 
 .list {}
+
+
 .cell {
     background: #fff;
-    height: 88rpx;
-    line-height: 88rpx;
-    font-size: 28rpx;
-    
-    position: relative;
+    min-height: 88rpx;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
-.cell__image {
+
+.cell_image {
+    margin-left: 32rpx;
+    margin-right: 24rpx;
+}
+
+.cell__icon {
     height: 44rpx;
     width: 44rpx;
 }
 
-.cell__text {
+.cell__warp {    
+    line-height: 88rpx;
+    flex: 1;
+}
+
+.u-border-bottom {
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+
+.cell__title {
     color: #222222;
+    font-size: 28rpx;
 }
