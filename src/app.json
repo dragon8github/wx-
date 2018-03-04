@@ -17,6 +17,7 @@
     "pages/RepayInfo/RepayInfo",
     "pages/ResetPwd/ResetPwd",
     "pages/Status/Status",
+    "pages/Setting/Setting",
 
     "help/component/index",
     "help/component/component-pages/action-sheet/action-sheet",
