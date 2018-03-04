@@ -3,7 +3,6 @@ const sass         = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const rename       = require('gulp-rename')
 
-
 function scss () {
     return gulp.src(['./src/pages/**/*.scss', './src/components/**/*.scss'], {base: './src'})
                .pipe(autoprefixer({
@@ -23,7 +22,7 @@ function scss () {
 gulp.task(scss)
 
 
-// 静态服务器
+// 监听服务器
 gulp.task('serve', function() {
     gulp.watch(['./src/pages/**/*.scss', './src/components/**/*.scss'], scss)
 })
