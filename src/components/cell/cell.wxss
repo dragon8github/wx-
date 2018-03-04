@@ -37,7 +37,7 @@
     line-height: 1;
     min-height: inherit;
     overflow: hidden;
-    padding: 0 10rpx;
+    padding: 0 20rpx;
     width: 100%; }
   .mint-cell .mint-cell-mask::after {
     background-color: #000;
@@ -51,8 +51,8 @@
   .mint-cell .mint-cell-label {
     color: #888;
     display: block;
-    font-size: 12rpx;
-    margin-top: 6rpx; }
+    font-size: 24rpx;
+    margin-top: 12rpx; }
   .mint-cell img {
     vertical-align: middle; }
   .mint-cell .mint-cell-title {
@@ -83,14 +83,15 @@
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
   .mint-cell .mint-cell-allow-right::after {
-    border: solid 2rpx #c8c8cd;
+    border: solid 4rpx #c8c8cd;
     border-bottom-width: 0;
     border-left-width: 0;
-    content: " ";
-    top: 50%;
-    right: 20rpx;
-    position: absolute;
-    size: 5rpx;
+    width: 10rpx;
+    height: 10rpx;
     -webkit-transform: translateY(-50%) rotate(45deg);
     -ms-transform: translateY(-50%) rotate(45deg);
-    transform: translateY(-50%) rotate(45deg); }
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    content: " ";
+    top: 50%;
+    right: 20rpx; }

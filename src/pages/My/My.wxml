@@ -39,10 +39,5 @@
                 <text class="cell__title">设置</text>
             </view>
         </view>
-
-
     </view>
-
-    <cell title="标题文字" value="说明文字"></cell>
-    
 </view>

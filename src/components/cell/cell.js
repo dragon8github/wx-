@@ -28,7 +28,7 @@ Component({
   },
   properties: {
     // 这里定义了innerText属性，属性值可以在组件使用时指定
-    Link: {type: Boolean, value: true}, 
+    isLink: {type: Boolean, value: true}, 
     label: {type: String, value: ''}, 
     to: {type: String, value: ''},
     icon: {type: String, value: ''},
