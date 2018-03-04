@@ -56,6 +56,38 @@
     }
 }
 
+/**
+ * 以下轮子用来说明，设计是多么不规范！
+ */
+
+@mixin f24 {
+    font-size: 24rpx;
+}
+
+@mixin f26 {
+    font-size: 26rpx;
+}
+
+@mixin f27 {
+    font-size: 27rpx;
+}
+
 @mixin f28 {
     font-size: 28rpx;
+}
+
+@mixin f30 {
+    font-size: 30rpx;
+}
+
+@mixin f32 {
+    font-size: 32rpx;
+}
+
+@mixin f38 {
+    font-size: 38rpx;
+}
+
+@mixin f48 {
+    font-size: 48rpx;
 }

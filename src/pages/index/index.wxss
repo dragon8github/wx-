@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/**
+ * 以下轮子用来说明，设计是多么不规范！
+ */
 .banner {
   width: 100%;
   height: 460rpx;
@@ -8,39 +12,28 @@
 
 .city {
   position: absolute;
-  left: 0;
   top: 0;
-  margin-top: 20rpx;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  left: 0;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 20rpx; }
 
 .city__image {
   width: 54rpx;
   height: 54rpx;
   display: inline-block;
-  margin-left: 29rpx;
-  margin-right: 10rpx; }
+  margin: 0 10rpx 0 29rpx; }
 
 .city__text {
   font-size: 30rpx;
   color: #ffffff; }
 
 .ad {
-  background-color: #ffffff;
-  height: 80rpx;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #ffffff;
+  height: 80rpx; }
 
 .ad__image {
   width: 54rpx;
@@ -56,30 +49,23 @@
   margin: 14rpx auto; }
 
 .business__block {
-  height: 170rpx;
-  padding-left: 60rpx;
-  padding-right: 30rpx;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  height: 170rpx;
+  padding: 0 30rpx 0 60rpx; }
 
 .business__block:first-child {
   border-bottom: 1rpx solid #e5e5e5; }
 
 .businessinfo__text {
-  color: #434343;
   font-size: 38rpx;
+  color: #434343;
   letter-spacing: 2rpx; }
 
 .businessinfo__more {
-  color: #999999;
   font-size: 28rpx;
+  color: #999999;
   line-height: 250%;
   letter-spacing: 2rpx; }
 
@@ -89,8 +75,8 @@
 .businessfast__button {
   width: 214rpx;
   height: 80rpx;
-  line-height: 80rpx;
   font-size: 32rpx;
+  line-height: 80rpx;
   background-color: #0e6ae7;
   color: #ffffff; }
 
@@ -101,34 +87,22 @@
   padding-bottom: 20rpx; }
 
 .process__text {
-  color: #222222;
-  text-align: center;
   font-size: 27rpx;
+  color: #222222;
   height: 100rpx;
-  line-height: 100rpx; }
+  line-height: 100rpx;
+  text-align: center; }
 
 .process__view {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 0 60rpx; }
 
 .processitem {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  flex-direction: column;
   position: relative; }
 
 .processitem__arrow {
@@ -141,5 +115,5 @@
   margin-bottom: 17rpx; }
 
 .processitem__text {
-  color: #666666;
-  font-size: 24rpx; }
+  font-size: 24rpx;
+  color: #666666; }

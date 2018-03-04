@@ -1,47 +1,40 @@
+@import "../../sass/variables.scss";
+@import "../../sass/helper.scss";
+
 .help {
+    @include flex(space-between);
     background-image: linear-gradient(120deg, #0372ef 0%, #0b88ff 100%), linear-gradient(#ffffff, #ffffff); 
-    background-blend-mode: normal, normal;
     width: 100%;
     min-height: 290rpx;
-
     padding: 55rpx 60rpx;
-    display: flex;
-    justify-content: space-between;
 }
 
 .helpleft {
+    @include flex(space-around, false, column);
     letter-spacing: 3rpx;
-
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 .helpleft__service {
+    @include f48;
     color: #ffffff;
-    font-size: 48rpx;
 }
 .helpleft__phone {
+    @include f26;
     color: #ffffff;
-    font-size: 26rpx;
 }
 .helpleft__time {
-    font-size: 26rpx;
+    @include f26;
     color: #ffffff;
 }
+
 .helpright {}
 .helpright__image {
-    width: 140rpx;
-    height: 140rpx;
+    @include size(140rpx, 140rpx);
 }
 
 .findcenter {
+    @include flex(space-around, center);
     background: #fff;
-
     padding: 53rpx 105rpx;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .introduce {
@@ -51,19 +44,16 @@
 .introduce__image {
     height: 170rpx;
     width: 170rpx;
-
     margin-bottom: 20rpx;
 }
 
 .introduce__text {
+    @include f32;
     color: #222222;
-    font-size: 32rpx;
 }
 
 .findcenter__line {
+    @include size(1rpx, 140rpx);
     background: #cccccc;
-    height: 140rpx;
-    width: 1rpx;
-
     margin:0 88rpx;
 }

@@ -1,36 +1,29 @@
+@charset "UTF-8";
+/**
+ * 以下轮子用来说明，设计是多么不规范！
+ */
 .help {
+  display: flex;
+  justify-content: space-between;
   background-image: -webkit-linear-gradient(330deg, #0372ef 0%, #0b88ff 100%), -webkit-linear-gradient(#ffffff, #ffffff);
   background-image: linear-gradient(120deg, #0372ef 0%, #0b88ff 100%), linear-gradient(#ffffff, #ffffff);
-  background-blend-mode: normal, normal;
   width: 100%;
   min-height: 290rpx;
-  padding: 55rpx 60rpx;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  padding: 55rpx 60rpx; }
 
 .helpleft {
-  letter-spacing: 3rpx;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  justify-content: space-around;
   flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  letter-spacing: 3rpx; }
 
 .helpleft__service {
-  color: #ffffff;
-  font-size: 48rpx; }
+  font-size: 48rpx;
+  color: #ffffff; }
 
 .helpleft__phone {
-  color: #ffffff;
-  font-size: 26rpx; }
+  font-size: 26rpx;
+  color: #ffffff; }
 
 .helpleft__time {
   font-size: 26rpx;
@@ -41,16 +34,11 @@
   height: 140rpx; }
 
 .findcenter {
-  background: #fff;
-  padding: 53rpx 105rpx;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  background: #fff;
+  padding: 53rpx 105rpx; }
 
 .introduce {
   text-align: center; }
@@ -61,11 +49,11 @@
   margin-bottom: 20rpx; }
 
 .introduce__text {
-  color: #222222;
-  font-size: 32rpx; }
+  font-size: 32rpx;
+  color: #222222; }
 
 .findcenter__line {
-  background: #cccccc;
-  height: 140rpx;
   width: 1rpx;
+  height: 140rpx;
+  background: #cccccc;
   margin: 0 88rpx; }
