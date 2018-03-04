@@ -12,7 +12,6 @@ function scss () {
                }))
                .pipe(sass().on('error', sass.logError))
                .pipe(rename(function (path) {
-                  console.log(path);
                   path.extname = '.wxss';
                }))
                .pipe(gulp.dest('./src'))
