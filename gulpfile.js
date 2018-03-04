@@ -23,7 +23,7 @@ gulp.task(scss)
 
 // 监听服务器
 gulp.task('serve', function() {
-    gulp.watch(['./src/pages/**/*.scss', './src/components/**/*.scss'], scss)
+    gulp.watch(['./src/pages/**/*.scss', './src/components/**/*.scss', './src/sass/*.scss'], scss)
 })
 
 // 开始

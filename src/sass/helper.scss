@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin center {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin ycenter {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin xcenter {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content : center;
+    align-items: center;
+}
+
+@mixin flex ($x: false, $y: false, $direction: false) {
+    display: flex;
+    @if $x {
+        justify-content: $x;
+    }
+    @if $y {
+        align-items: $y;
+    }
+    @if $direction {
+        flex-direction: $direction;
+    }
+}
+
+@mixin position ($top, $right, $bottom, $left) {
+    position: absolute;
+    @if $top {  
+        top: $top; 
+    }
+    @if $right { 
+        right: $right;
+    }
+    @if $bottom {
+        bottom: $bottom;
+    }
+    @if $left {
+        left: $left;
+    }
+}
+
+@mixin f28 {
+    font-size: 28rpx;
+}

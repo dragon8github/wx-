@@ -1,7 +1,8 @@
-.banner {
-    width: 100%;
-    height: 328rpx;
+@import "../../sass/variables.scss";
+@import "../../sass/helper.scss";
 
+.banner {
+    @include size(100%, 328rpx)
     position: relative;
 }
 
@@ -10,58 +11,43 @@
 }
 
 .userinfo {
+    @include position(false, false, 30rpx, 30rpx);
+    @include flex(flex-start, center);
     color: #fff;
-
-    position: absolute;
-    bottom: 30rpx; 
-    left: 30rpx;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .userinfoleft {}
 .userinfoleft__head {
+    @include size(130rpx, 130rpx);
     border-radius: 100%;
     border: 10rpx solid #b6cced;
     margin-right: 45rpx;
-    height: 130rpx;
-    width: 130rpx;
-
 }
 .userinforight {
+    @include flex(space-between, flex-start, column);
+
     font-size: 32rpx;
     height: 90rpx;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
 }
+
 .userinforight__name {}
 .userinforight__phone {}
-
 .list {}
 
-
 .cell {
+    @include flex(flex-start, center);
+
     background: #fff;
     min-height: 88rpx;
     overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .cell_image {
-    margin-left: 32rpx;
-    margin-right: 24rpx;
+    margin:0 24rpx 0 32rpx;
 }
 
 .cell__icon {
-    height: 44rpx;
-    width: 44rpx;
+    @include size(44rpx, 44rpx);
 }
 
 .cell__warp {    
@@ -73,8 +59,7 @@
     border-bottom: 1rpx solid #e5e5e5;
 }
 
-
 .cell__title {
+    @include f28;
     color: #222222;
-    font-size: 28rpx;
 }
