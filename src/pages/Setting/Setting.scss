@@ -1,14 +1,34 @@
+@charset "UTF-8";
 @import "../../sass/variables.scss";
 @import "../../sass/helper.scss";
 
-.setting {
-    
+
+.cell {
+    @include flex(flex-start, center);
+
+    background: #fff;
+    min-height: 88rpx;
+    overflow: hidden;
 }
 
-.setting__element {
-    
+.cell_image {
+    margin:0 24rpx 0 32rpx;
 }
 
-.setting__element--modifier {
-    
+.cell__icon {
+    @include size(44rpx, 44rpx);
+}
+
+.cell__warp {    
+    line-height: 88rpx;
+    flex: 1;
+}
+
+.u-border-bottom {
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+.cell__title {
+    @include f28;
+    color: #222222;
 }

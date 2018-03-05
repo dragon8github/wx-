@@ -5,6 +5,11 @@
     height: $height;
 }
 
+@mixin textcenter {
+    text-align: center;
+    margin: auto;
+}
+
 @mixin center {
     top: 50%;
     left: 50%;
@@ -29,12 +34,39 @@
 
 @mixin flex ($x: false, $y: false, $direction: false) {
     display: flex;
+
     @if $x {
-        justify-content: $x;
+        @if $x == s or $x == start {
+            justify-content: flex-start;
+        } @else if $x == c or $x == center {
+            justify-content: center;
+        } @else if $x == e or $x == end {
+            justify-content: flex-end;
+        } @else if $x == a or $x == around {
+            justify-content: space-around;
+        } @else if $x == b or $x == between {
+            justify-content: space-between;
+        } @else { 
+            justify-content: $x;
+        }
     }
+
     @if $y {
-        align-items: $y;
+        @if $y == s or $y == start {
+            align-items: flex-start;
+        } @else if $y == c or $y == center {
+            align-items: center;
+        } @else if $y == e or $y == end {
+            align-items: flex-end;
+        }  @else if  $y == stretch or $y == full or $y == f {
+            align-items: stretch;
+        }  @else if $y == baseline or $y == base or $y == b or $y == line or $y == l {
+            align-items: baseline;
+        } @else { 
+            align-items: $y;
+        }
     }
+
     @if $direction {
         flex-direction: $direction;
     }

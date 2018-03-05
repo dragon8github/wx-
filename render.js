@@ -112,6 +112,7 @@ function extractTemplate () {
      });
 }
 
+
 extractTemplate();
 renderPages();
 renderComponents();

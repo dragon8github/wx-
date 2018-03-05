@@ -1,11 +1,31 @@
-.setting {
-    
-}
+@charset "UTF-8";
+/**
+ * 以下轮子用来说明，设计是多么不规范！
+ */
+.cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  min-height: 88rpx;
+  overflow: hidden; }
 
-.setting__element {
-    
-}
+.cell_image {
+  margin: 0 24rpx 0 32rpx; }
 
-.setting__element--modifier {
-    
-}
+.cell__icon {
+  width: 44rpx;
+  height: 44rpx; }
+
+.cell__warp {
+  line-height: 88rpx;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.u-border-bottom {
+  border-bottom: 1rpx solid #e5e5e5; }
+
+.cell__title {
+  font-size: 28rpx;
+  color: #222222; }

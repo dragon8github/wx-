@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/Emotion/Emotion",
+    "pages/Setting/Setting",
     "pages/Find/Find",
     "pages/index/index",
     "pages/My/My",
@@ -17,7 +19,6 @@
     "pages/RepayInfo/RepayInfo",
     "pages/ResetPwd/ResetPwd",
     "pages/Status/Status",
-    "pages/Setting/Setting",
 
     "help/component/index",
     "help/component/component-pages/action-sheet/action-sheet",

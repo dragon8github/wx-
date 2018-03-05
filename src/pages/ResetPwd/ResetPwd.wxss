@@ -1,11 +1,4 @@
-.resetpwd {
-    
-}
-
-.resetpwd__element {
-    
-}
-
-.resetpwd__element--modifier {
-    
-}
+@charset "UTF-8";
+/**
+ * 以下轮子用来说明，设计是多么不规范！
+ */
