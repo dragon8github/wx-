@@ -19,6 +19,10 @@
   align-items: center;
   color: #fff; }
 
+.userinfoleft {
+  display: flex;
+  align-items: center; }
+
 .userinfoleft__head {
   width: 130rpx;
   height: 130rpx;
@@ -28,11 +32,28 @@
 
 .userinforight {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   font-size: 32rpx;
   height: 90rpx; }
+
+.userinforight__name {
+  font-size: 32rpx;
+  margin-bottom: 15rpx; }
+
+.userinforight__phone {
+  font-size: 28rpx; }
+
+.userinforight__nologin {
+  width: 187rpx;
+  height: 58rpx;
+  font-size: 32rpx;
+  border: solid 2rpx #ffffff;
+  border-radius: 4rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 58rpx; }
 
 .cell {
   display: flex;

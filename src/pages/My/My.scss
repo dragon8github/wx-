@@ -16,7 +16,9 @@
     color: #fff;
 }
 
-.userinfoleft {}
+.userinfoleft {
+    @include flex(false, center);
+}
 .userinfoleft__head {
     @include size(130rpx, 130rpx);
     border-radius: 100%;
@@ -24,14 +26,30 @@
     margin-right: 45rpx;
 }
 .userinforight {
-    @include flex(space-between, flex-start, column);
+    @include flex(center, flex-start, column);
 
     font-size: 32rpx;
     height: 90rpx;
 }
 
-.userinforight__name {}
-.userinforight__phone {}
+.userinforight__name {
+    @include f32;
+    margin-bottom: 15rpx;
+}
+.userinforight__phone {
+    @include f28;
+}
+
+.userinforight__nologin {
+    @include size(187rpx, 58rpx);
+    @include f32;
+    border: solid 2rpx #ffffff;
+    border-radius: 4rpx;
+    color: #ffffff;
+    text-align: center;
+    line-height: 58rpx;
+}
+
 .list {}
 
 .cell {
@@ -63,3 +81,4 @@
     @include f28;
     color: #222222;
 }
+

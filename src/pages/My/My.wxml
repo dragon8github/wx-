@@ -3,11 +3,17 @@
         <image class="banner__bg" src="./../../image/my/BG.png"></image>
         <view class="userinfo">
             <view class="userinfoleft">
-                <image class="userinfoleft__head" src="./../../image/my/head.jpg"></image>
+                <image wx:if="{{ hasLogin === true }}" class="userinfoleft__head" src="./../../image/my/head.jpg"></image>
+                <image wx:else class="userinfoleft__head" src="./../../image/my/nologin.png"></image>
             </view>
             <view class="userinforight">
-                <text class="userinforight__name">李钊鸿</text>
-                <text class="userinforight__phone">13713332652</text>
+                <block wx:if="{{ hasLogin === true }}">
+                    <text class="userinforight__name">李钊鸿</text>
+                    <text class="userinforight__phone">13713332652</text>
+                </block>
+                <block wx:else>
+                    <view class="userinforight__nologin">登录或注册</view>
+                </block>
             </view>
         </view>
     </view> 
