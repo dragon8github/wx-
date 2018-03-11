@@ -13,6 +13,7 @@ Page({
 
   usernamekeyup: function (v) {
       this.setData({
+          // 由于是通过triggerEvent触发的事件，所以返回值是一个事件类型的参数。detail才是我们的值
           username: v.detail
       });
   },
@@ -51,7 +52,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+      this.userfield = this.selectComponent("#userfield");
+      this.pwdfield = this.selectComponent("#pwdfield");
   },
 
   /**

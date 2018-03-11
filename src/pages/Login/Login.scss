@@ -8,64 +8,6 @@
 
 .form {
     padding: 30rpx;
-
-    .form__group {
-        margin-bottom: 60rpx;
-        position: relative;        
-    }
-
-    .form__title {
-        color: #0e6ae7;
-        font-size: 24rpx;
-        position: absolute;
-        transition:.35s ease all;
-        opacity: 0;
-        z-index: 2;
-    }
-
-    .form__title--show {
-        opacity: 1;
-        transform: translateY(-30rpx);
-    }
-
-    .form__title--error {
-        color: #ff3841;
-    }
-
-    .form__inputwarp {
-        position: relative;
-    }
-
-    .form__input {
-        border-bottom: 1rpx solid #e5e5e5;
-        font-size: 28rpx;
-        height: 88rpx;
-        background: #fff;
-    }
-
-    .form__iconblock {
-        @include ycenter;
-        z-index: 2;
-        right: 0;
-        padding: 15rpx 20rpx;
-    }
-
-    .form__close {
-        @include size(35rpx, 35rpx);
-    }
-
-    .form__closeeye {
-        @include size(60rpx, 60rpx);
-        position: relative;
-        top: 0rpx;
-    }
-
-    .form__openeye {
-        @include size(60rpx, 60rpx);
-        position: relative;
-        top: 9rpx;
-    }
-
 }
 
 .button {

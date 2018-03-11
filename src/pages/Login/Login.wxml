@@ -2,30 +2,19 @@
     <view class="form">
 
         <field placeholder='请输入手机号码' 
-              title="团贷网账号 / 手机号" 
-              value="{{ username }}" 
-              bind:keyup="usernamekeyup">
+               id='userfield'
+               title="团贷网账号 / 手机号" 
+               value="{{ username }}" 
+               bind:keyup="usernamekeyup">
         </field>
 
         <field placeholder='登录密码'
+               id='pwdfield'
                title="登录密码"
                value="{{ pwd }}"
                bind:keyup="pwdkeyup"
                type="password">
         </field>
-
-       <!-- <view class="form__group">
-           <view class="form__title {{ pwd ? 'form__title--show' : '' }}">登录密码</view>
-           <view class="form__inputwarp">
-               <input class="form__input" type="{{ pwdType }}" placeholder="登录密码" bindinput="pwdmykeyup" />
-                <view class="form__iconblock" bindtap="eyeclick">
-                    <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
-                           src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
-                   </image>
-                </view>
-           </view>
-       </view> -->
-
 
         <view class="button">
             <button class="button--primary" bindtap='go'>登录</button>
