@@ -9,7 +9,7 @@
 .form {
   padding: 30rpx; }
   .form .form__group {
-    margin-bottom: 40rpx;
+    margin-bottom: 60rpx;
     position: relative; }
   .form .form__title {
     color: #0e6ae7;
@@ -18,7 +18,7 @@
     -webkit-transition: .35s ease all;
     transition: .35s ease all;
     opacity: 0;
-    z-index: 999; }
+    z-index: 2; }
   .form .form__title--show {
     opacity: 1;
     -webkit-transform: translateY(-30rpx);
@@ -27,15 +27,34 @@
   .form .form__title--error {
     color: #ff3841; }
   .form .form__inputwarp {
-    position: relative;
-    background: #fff; }
+    position: relative; }
   .form .form__input {
     border-bottom: 1rpx solid #e5e5e5;
     font-size: 28rpx;
     height: 88rpx;
     background: #fff; }
+  .form .form__iconblock {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    right: 0;
+    padding: 15rpx 20rpx; }
+  .form .form__close {
+    width: 35rpx;
+    height: 35rpx; }
+  .form .form__closeeye {
+    width: 60rpx;
+    height: 60rpx;
+    position: relative;
+    top: 0rpx; }
+  .form .form__openeye {
+    width: 60rpx;
+    height: 60rpx;
+    position: relative;
+    top: 9rpx; }
 
-.buttonwarp .button {
+.button .button--primary {
   width: 100%;
   height: 100rpx;
   background-color: #0e6ae7;
@@ -44,5 +63,5 @@
   color: #fff;
   letter-spacing: 2rpx;
   border: 0; }
-  .buttonwarp .button.is-disable {
+  .button .button--primary.is-disable {
     background: #ccc; }

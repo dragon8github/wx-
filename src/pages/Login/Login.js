@@ -5,19 +5,39 @@ Page({
    */
   data: {
       username: '',
-      pwd: ''
+      userError: '',
+      pwd: '',
+      pwdeye: 'close',
+      pwdType: 'password'
   },
 
   usernamemykeyup: function (e) {
       this.setData({
-        username: e.detail.value
+          username: e.detail.value
       });
   },
 
   pwdmykeyup: function (e) {
       this.setData({
-        pwd: e.detail.value
+          pwd: e.detail.value
       });
+  },
+
+  cleartext: function () {
+      this.setData({
+          username: ''
+      });
+  },
+
+  eyeclick: function (e) {
+      this.setData({
+          pwdeye: this.data.pwdeye === 'close' ? 'open' : 'close',
+          pwdType: this.data.pwdType === 'password' ? 'text' : 'password'
+      });
+  },
+
+  submit: function () {
+   
   },
 
   /**

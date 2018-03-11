@@ -1,21 +1,31 @@
 <view class="container login">
     <view class="form">
         <view class="form__group">
-            <view class="form__title {{ username ? 'form__title--show' : '' }}">团贷网账号 / 手机号</view>
-            <view class="form__inputblock">
-                <input class="form__input" type="text" placeholder="请输入手机号码" bindinput="usernamemykeyup" />
+            <view class="form__title {{ username ? 'form__title--show' : '' }}  {{ userError ? 'form__title--error' : '' }}">{{ userError ? userError : '团贷网账号 / 手机号' }}</view>
+            <view class="form__inputwarp">
+                <input class="form__input" type="text" placeholder="请输入手机号码" bindinput="usernamemykeyup" value="{{ username }}" />
+                <view class="form__iconblock" wx-if="{{ username }}" bindtap="cleartext">
+                    <image class="form__close" src="../../image/close.png"></image>
+                </view>
             </view>
         </view>
 
        <view class="form__group">
            <view class="form__title {{ pwd ? 'form__title--show' : '' }}">登录密码</view>
            <view class="form__inputwarp">
-               <input class="form__input" type="text" placeholder="登录密码" bindinput="pwdmykeyup" />
+               <input class="form__input" type="{{ pwdType }}" placeholder="登录密码" bindinput="pwdmykeyup" />
+                <view class="form__iconblock" bindtap="eyeclick">
+                    <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
+                           src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
+                   </image>
+                </view>
            </view>
        </view>
 
-        <view class="buttonwarp">
-            <button class="button button--primary">登录</button>
+       <field></field>
+
+        <view class="button">
+            <button class="button--primary" bindtap='submit'>登录</button>
         </view>
     </view>
 </view>

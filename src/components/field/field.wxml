@@ -1,3 +1,118 @@
-<view class="container field">
-    
+<view class="form">
+    <view class="form__group">
+        <!-- 标题 -->
+        <view class="form__title {{ myvalue ? 'form__title--show' : '' }}  {{ errTitle ? 'form__title--error' : '' }}">{{ errTitle ? errTitle : title }}</view>
+
+        <!-- input:text -->
+        <view wx:if="type === 'text'" class="form__inputwarp">
+            <input class="form__input" type="text" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
+            <view class="form__iconblock" wx:if="{{ myvalue }}" bindtap="cleartext">
+                <image class="form__close" src="../../image/close.png"></image>
+            </view>
+        </view>
+
+        <!-- input:password -->
+        <view wx:else class="form__inputwarp">
+            <input class="form__input" type="{{ pwdType }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
+             <view class="form__iconblock" bindtap="eyeclick">
+                 <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
+                        src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
+                </image>
+             </view>
+        </view>
+    </view>
 </view>
+
+<!-- 
+    <view class="container login">
+    <view class="form">
+       <view class="form__group">
+           <view class="form__title {{ username ? 'form__title--show' : '' }}  {{ userError ? 'form__title--error' : '' }}">{{ userError ? userError : '团贷网账号 / 手机号' }}</view>
+           <view class="form__inputwarp">
+               <input class="form__input" type="text" placeholder="请输入手机号码" bindinput="usernamemykeyup" value="{{ username }}" />
+               <view class="form__iconblock" wx:if="{{ username }}" bindtap="cleartext">
+                   <image class="form__close" src="../../image/close.png"></image>
+               </view>
+           </view>
+       </view>
+
+       <view class="form__group">
+           <view class="form__title {{ pwd ? 'form__title--show' : '' }}">登录密码</view>
+           <view class="form__inputwarp">
+               <input class="form__input" type="{{ pwdType }}" placeholder="登录密码" bindinput="pwdmykeyup" />
+                <view class="form__iconblock" bindtap="eyeclick">
+                    <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
+                           src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
+                   </image>
+                </view>
+           </view>
+       </view>
+       
+        <view class="button">
+            <button class="button--primary" bindtap='submit'>登录</button>
+        </view>
+    </view>
+</view>
+
+
+.form {
+    padding: 30rpx;
+
+    .form__group {
+        margin-bottom: 60rpx;
+        position: relative;        
+    }
+
+    .form__title {
+        color: #0e6ae7;
+        font-size: 24rpx;
+        position: absolute;
+        transition:.35s ease all;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .form__title--show {
+        opacity: 1;
+        transform: translateY(-30rpx);
+    }
+
+    .form__title--error {
+        color: #ff3841;
+    }
+
+    .form__inputwarp {
+        position: relative;
+    }
+
+    .form__input {
+        border-bottom: 1rpx solid #e5e5e5;
+        font-size: 28rpx;
+        height: 88rpx;
+        background: #fff;
+    }
+
+    .form__iconblock {
+        @include ycenter;
+        z-index: 2;
+        right: 0;
+        padding: 15rpx 20rpx;
+    }
+
+    .form__close {
+        @include size(35rpx, 35rpx);
+    }
+
+    .form__closeeye {
+        @include size(60rpx, 60rpx);
+        position: relative;
+        top: 0rpx;
+    }
+
+    .form__openeye {
+        @include size(60rpx, 60rpx);
+        position: relative;
+        top: 9rpx;
+    }
+}
+ -->
