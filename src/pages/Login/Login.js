@@ -27,7 +27,6 @@ Page({
   },
 
   isDisable: function () {
-    console.log(this.data.username, this.data.pwd, this.data.username !== '' && this.data.pwd !== '')
     if (this.data.username !== '' && this.data.pwd !== '') {
       this.setData({
           disable: false
