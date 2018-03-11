@@ -2,13 +2,66 @@
 @import "../../sass/helper.scss";
 
 .login {
+    background: #fff;
+    height: 100%;
+}
+
+.form {
+    padding: 30rpx;
+
+    .form__group {
+        margin-bottom: 40rpx;
+        position: relative;        
+    }
+
+    .form__title {
+        color: #0e6ae7;
+        font-size: 24rpx;
+        position: absolute;
+        transition:.35s ease all;
+        opacity: 0;
+        z-index:999;
+    }
+
+    .form__title--show {
+        opacity: 1;
+        transform: translateY(-30rpx);
+    }
+
+    .form__title--error {
+        color: #ff3841;
+    }
+
+    .form__inputwarp {
+        position: relative;
+        background: #fff
+    }
+
+    .form__input {
+        border-bottom: 1rpx solid #e5e5e5;
+        font-size: 28rpx;
+        height: 88rpx;
+        background: #fff;
+    }
     
 }
 
-.login__element {
-    
+.buttonwarp {
+
+    .button {
+        width: 100%;
+        height: 100rpx;
+        background-color: #0e6ae7;
+        border-radius: 10rpx;
+        font-size: 36rpx;
+        color: #fff;
+        letter-spacing: 2rpx;
+        border: 0;
+
+        &.is-disable {
+            background: #ccc;
+        }
+    }
 }
 
-.login__element--modifier {
-    
-}
+

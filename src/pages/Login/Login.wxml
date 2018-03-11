@@ -1,3 +1,21 @@
 <view class="container login">
-    
+    <view class="form">
+        <view class="form__group">
+            <view class="form__title {{ username ? 'form__title--show' : '' }}">团贷网账号 / 手机号</view>
+            <view class="form__inputblock">
+                <input class="form__input" type="text" placeholder="请输入手机号码" bindinput="usernamemykeyup" />
+            </view>
+        </view>
+
+       <view class="form__group">
+           <view class="form__title {{ pwd ? 'form__title--show' : '' }}">登录密码</view>
+           <view class="form__inputwarp">
+               <input class="form__input" type="text" placeholder="登录密码" bindinput="pwdmykeyup" />
+           </view>
+       </view>
+
+        <view class="buttonwarp">
+            <button class="button button--primary">登录</button>
+        </view>
+    </view>
 </view>

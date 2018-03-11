@@ -4,7 +4,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+      username: '',
+      pwd: ''
+  },
+
+  usernamemykeyup: function (e) {
+      this.setData({
+        username: e.detail.value
+      });
+  },
+
+  pwdmykeyup: function (e) {
+      this.setData({
+        pwd: e.detail.value
+      });
   },
 
   /**

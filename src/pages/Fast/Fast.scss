@@ -90,11 +90,13 @@
         color: #fff;
         letter-spacing: 2rpx;
         border: 0;
+
+        &.is-disable {
+            background: #ccc;
+        }
     }
 
-    .is-disable {
-        background: #ccc;
-    }
+    
 }
 
 

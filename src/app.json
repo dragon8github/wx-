@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/Login/Login",
     "pages/Fast/Fast",
     "pages/My/My",
     "pages/Emotion/Emotion",
@@ -12,7 +13,6 @@
     "pages/CitySelect/CitySelect",
     "pages/ForgetPwd/ForgetPwd",
     "pages/HouseBusinessInfo/HouseBusinessInfo",
-    "pages/Login/Login",
     "pages/RegProtocol/RegProtocol",
     "pages/Register/Register",
     "pages/Repay/Repay",

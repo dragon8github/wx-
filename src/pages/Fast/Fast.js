@@ -5,9 +5,26 @@ Page({
    */
   data: {
       active: 'car',
-      username: '李钊鸿',
-      phone: '13713332652'
+      username: '',
+      phone: ''
   },
+
+  changeusername: function (e) {
+      this.setData({  
+        username: e.detail.value
+      });  
+  },
+
+  changephone: function (e) {
+      this.setData({  
+        phone: e.detail.value
+      });  
+  },
+
+  submit: function () {
+      console.log(this.phone, this.username);
+  },
+
 
   /**
    * 生命周期函数--监听页面加载

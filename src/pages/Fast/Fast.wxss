@@ -68,8 +68,8 @@
     color: #fff;
     letter-spacing: 2rpx;
     border: 0; }
-  .form .is-disable {
-    background: #ccc; }
+    .form .form__button.is-disable {
+      background: #ccc; }
 
 .buttomtext {
   font-size: 24rpx;

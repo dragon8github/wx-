@@ -20,9 +20,9 @@
         </view>
 
         <view class="form">
-            <input  class="form__input" type="text" value="{{ username }}" confirm-type="next" placeholder='请输入姓名' focus="true" adjust-position="true" />
-            <input  class="form__input" type="text" value="{{ phone }}" confirm-type="next" placeholder='请输入手机号码' />
-            <button class="form__button {{ !username || !phone ? 'is-disable' : '' }}">立即申请</button>
+            <input  class="form__input" bindinput="changeusername" type="text" value="{{ username }}" confirm-type="next" placeholder='请输入姓名' focus="true" adjust-position="true" />
+            <input  class="form__input" bindinput="changephone"    type="text" value="{{ phone }}" confirm-type="next" placeholder='请输入手机号码' />
+            <button class="form__button {{ username === '' || phone  === '' ? 'is-disable' : '' }}" bindtap="submit">立即申请</button>
         </view>
     </view>
 
