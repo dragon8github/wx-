@@ -4,22 +4,21 @@
         <view class="form__title {{ myvalue ? 'form__title--show' : '' }}  {{ errTitle ? 'form__title--error' : '' }}">{{ errTitle ? errTitle : title }}</view>
 
         <!-- input:text -->
-        <view wx:if="type === 'text'" class="form__inputwarp">
+        <view wx:if="{{ type === 'text' }}" class="form__inputwarp">
             <input class="form__input" type="text" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
             <view class="form__iconblock" wx:if="{{ myvalue }}" bindtap="cleartext">
                 <image class="form__close" src="../../image/close.png"></image>
             </view>
         </view>
-
         <!-- input:password -->
-        <view wx:else class="form__inputwarp">
-            <input class="form__input" type="{{ pwdType }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
-             <view class="form__iconblock" bindtap="eyeclick">
-                 <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
-                        src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
-                </image>
-             </view>
-        </view>
+         <view wx:elif="{{ type === 'password' }}" class="form__inputwarp">
+              <input class="form__input" type="{{ pwdType }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
+              <view class="form__iconblock" bindtap="eyeclick">
+                  <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
+                         src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
+                 </image>
+              </view>
+         </view>
     </view>
 </view>
 

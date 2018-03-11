@@ -26,7 +26,6 @@ Component({
   data: {
     myvalue: '',
     myerrTitle: '',
-    mytype: '',
     pwdType: 'password',
     pwdeye: 'close',
   },
@@ -61,5 +60,10 @@ Component({
         });
         this.triggerEvent('keyup', '')
     },
-  }
+  },
+  ready: function () {
+      this.setData({
+          myvalue: this.properties.value
+      })
+  },
 })

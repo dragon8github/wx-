@@ -11,15 +11,15 @@ Page({
       pwdType: 'password'
   },
 
-  usernamemykeyup: function (e) {
+  usernamekeyup: function (v) {
       this.setData({
-          username: e.detail.value
+          username: v.detail
       });
   },
 
-  pwdmykeyup: function (e) {
+  pwdkeyup: function (v) {
       this.setData({
-          pwd: e.detail.value
+          pwd: v.detail
       });
   },
 
@@ -36,8 +36,8 @@ Page({
       });
   },
 
-  submit: function () {
-   
+  go: function () {
+      console.log(this.data.username, this.data.pwd);
   },
 
   /**
