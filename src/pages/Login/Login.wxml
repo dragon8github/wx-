@@ -5,19 +5,17 @@
                id='userfield'
                title="团贷网账号 / 手机号" 
                value="{{ username }}" 
-               bind:keyup="usernamekeyup">
+               bind:keyupEvent="usernamekeyup">
         </field>
 
         <field placeholder='登录密码'
                id='pwdfield'
                title="登录密码"
                value="{{ pwd }}"
-               bind:keyup="pwdkeyup"
+               bind:keyupEvent="pwdkeyup"
                type="password">
         </field>
 
-        <view class="button">
-            <button class="button--primary" bindtap='go'>登录</button>
-        </view>
+        <mybutton value="登录" bind:tapEvent='go' disable='{{ disable }}'></mybutton>
     </view>
 </view>

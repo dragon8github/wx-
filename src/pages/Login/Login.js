@@ -7,8 +7,8 @@ Page({
       username: '',
       userError: '',
       pwd: '',
-      pwdeye: 'close',
-      pwdType: 'password'
+      pwdError: '',
+      disable: true
   },
 
   usernamekeyup: function (v) {
@@ -16,12 +16,27 @@ Page({
           // 由于是通过triggerEvent触发的事件，所以返回值是一个事件类型的参数。detail才是我们的值
           username: v.detail
       });
+      this.isDisable()
   },
 
   pwdkeyup: function (v) {
       this.setData({
           pwd: v.detail
       });
+      this.isDisable()
+  },
+
+  isDisable: function () {
+    console.log(this.data.username, this.data.pwd, this.data.username !== '' && this.data.pwd !== '')
+    if (this.data.username !== '' && this.data.pwd !== '') {
+      this.setData({
+          disable: false
+      })
+    } else {
+      this.setData({
+          disable: true
+      });
+    }
   },
 
   cleartext: function () {

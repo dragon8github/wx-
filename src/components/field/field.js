@@ -32,8 +32,8 @@ Component({
   methods: {
     // 这里是一个自定义方法
     mykeyup: function(e){
-      let v = e.detail.value
-      this.triggerEvent('keyup', v)
+      let v = e.detail.value.trim()
+      this.triggerEvent('keyupEvent', v)
       this.setData({
           myvalue: v
       });
@@ -58,7 +58,7 @@ Component({
         this.setData({
             myvalue: ''
         });
-        this.triggerEvent('keyup', '')
+        this.triggerEvent('keyupEvent', '')
     },
   },
   ready: function () {
