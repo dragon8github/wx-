@@ -1,0 +1,1 @@
+node makecss.js -p src/pages/fast/fast.wxml

@@ -1,14 +1,108 @@
 @import "../../sass/variables.scss";
 @import "../../sass/helper.scss";
 
-.fast {
-    
+.banner {
+    @include flex(c,c);
+    height: 300rpx;
+    margin-bottom: 20rpx;
+    background: #fff;
+
+    .banner__img {
+      
+    }
+
+    .banner__image {
+        @include size(293rpx, 198rpx);
+    }
+
+    .banner__text {
+        padding-left: 30rpx;
+    }
+
+    .banner__title {
+        color: #222222;
+        font-size: 36rpx;
+    }
+
+    .banner__graytext {
+        color: #999999;
+        font-size: 24rpx;
+        margin-top: 26rpx;
+    }
+
+    .banner__graytext--section {
+        line-height: 45rpx;
+    }
 }
 
-.fast__element {
-    
+
+.navbar {
+    position: relative;
+    height: 88rpx;
+    background: #fff;
+    font-size: 0;
+
+    .navbar__item {
+        color: #999999;
+        font-size: 36rpx;
+        line-height: 88rpx;
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .is-active {
+        color: #0e6ae7;
+    }
+
+    .navbar__line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 375rpx;
+        height: 4rpx;
+        background-color: #0e6ae7;
+        transition: .3s ease;
+    }
 }
 
-.fast__element--modifier {
-    
+
+.form {
+    padding: 30rpx;
+    background: #fff;
+    width: 100%;
+
+    .form__input {
+        border-radius: 10rpx;
+        border: solid 2rpx #c8c7cc;
+        font-size: 28rpx;
+        height: 88rpx;
+        padding-left: 30rpx;
+        margin-bottom: 30rpx;
+    }
+
+    .form__button {
+        width: 100%;
+        height: 100rpx;
+        background-color: #0e6ae7;
+        border-radius: 10rpx;
+        font-size: 36rpx;
+        color: #fff;
+        letter-spacing: 2rpx;
+        border: 0;
+    }
+
+    .is-disable {
+        background: #ccc;
+    }
+}
+
+
+
+.buttomtext {
+    font-size: 24rpx;
+    line-height: 36rpx;
+    letter-spacing: 1rpx;
+    color: #999;
+    margin: 30rpx;
 }

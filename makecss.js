@@ -4,6 +4,7 @@ const cheerio = require('cheerio')
 const yargs   = require('yargs')
 
 // 最好是使用--来，不然容易导致冲突
+// node makecss.js -p src/pages/fast/fast.wxml
 const argv    = yargs.alias('n', 'name').alias('p', 'path').alias('o', 'output').argv
 
 

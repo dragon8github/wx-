@@ -1,3 +1,33 @@
 <view class="container fast">
-    
+    <view class="banner">
+          <view class="banner__img">
+                <image class="banner__image" src="../../image/fc_img.png"></image>
+          </view>
+          <view class="banner__text">
+              <view class="banner__title">极速放款,急您所急!</view>
+              <view class="banner__graytext">
+                  <view class="banner__graytext--section">大额借贷，资金及时雨</view>
+                  <view class="banner__graytext--section">线上申请更便捷</view>
+              </view>
+          </view>
+    </view>
+
+    <view>
+        <view class="navbar">
+             <view class="navbar__item {{ active === 'car' ? 'is-active' : '' }}" >一点车贷</view>
+             <view class="navbar__item {{ active === 'house' ? 'is-active' : '' }}" >鸿特微贷</view>
+             <a class="navbar__line"></a>
+        </view>
+
+        <view class="form">
+            <input  class="form__input" type="text" value="{{ username }}" confirm-type="next" placeholder='请输入姓名' focus="true" adjust-position="true" />
+            <input  class="form__input" type="text" value="{{ phone }}" confirm-type="next" placeholder='请输入手机号码' />
+            <button class="form__button {{ !username || !phone ? 'is-disable' : '' }}">立即申请</button>
+        </view>
+    </view>
+
+    <view class="buttomtext">
+       本司承诺会保护您的个人隐私，您的资料仅用于申请抵押贷款,
+       不会以任何形式泄露给其他机构或人员。
+    </view>
 </view>

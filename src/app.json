@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/Fast/Fast",
     "pages/My/My",
     "pages/Emotion/Emotion",
     "pages/Setting/Setting",
@@ -9,7 +10,6 @@
     "pages/BorrowProgress/BorrowProgress",
     "pages/CarBusinessInfo/CarBusinessInfo",
     "pages/CitySelect/CitySelect",
-    "pages/Fast/Fast",
     "pages/ForgetPwd/ForgetPwd",
     "pages/HouseBusinessInfo/HouseBusinessInfo",
     "pages/Login/Login",

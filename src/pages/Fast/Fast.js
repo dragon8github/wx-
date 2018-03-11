@@ -4,7 +4,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+      active: 'car',
+      username: '李钊鸿',
+      phone: '13713332652'
   },
 
   /**
