@@ -23,11 +23,11 @@
     },
     update: function() {
       if (this.data.mytimer <= 1) {
+         // 清除倒计时器
+         clearInterval(this.data.Interval)
          this.setData({
             // 重置计数
              mytimer: this.properties.timer,
-             // 清除计时器
-             Interval: null,
              // 允许启动倒计时
              stop: true
          });
@@ -40,12 +40,12 @@
       }
     },
     startTime: function() {
+        console.log(123);
         // 我不明白为什么小程序不支持传入函数。而必须这样做
         // 不仅这里如此，其实使用triggerEvent时候也一样
-        let val = setInterval(_ => this.update(), 1000);
         this.setData({
               // 开始循环执行update函数
-              Interval: val,
+              Interval: setInterval(_ => this.update(), 1000),
               // 禁止启动倒计时
               stop: false
         });

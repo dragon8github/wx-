@@ -8,8 +8,12 @@ Page({
   },
 
   getvalidate: function (fn) {
-      console.log(fn.detail())
-      // this.selectComponent("#getvalidate").getvalidate()
+    // fn.detail()
+     wx.showLoading({title: '加载中', mask: true})
+     setTimeout(function () {
+        wx.hideLoading()
+        fn.detail()
+     }, 2000)
   },
 
   /**
