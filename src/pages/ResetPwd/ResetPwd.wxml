@@ -4,14 +4,14 @@
                id='pwd1field'
                title="设置密码"
                value="{{ pwd }}"
-               bind:keyupEvent="pwdkeyup"
+               bind:keyupEvent="pwd1keyup"
                type="password">
         </field>
         <field placeholder='设置密码'
                id='pwd2field'
                title="请再次输入密码"
                value="{{ pwd }}"
-               bind:keyupEvent="pwdkeyup"
+               bind:keyupEvent="pwd2keyup"
                type="password">
         </field>
         <mybutton value="提交更新"  bind:tapEvent='go' disable='{{ disable }}'></mybutton>

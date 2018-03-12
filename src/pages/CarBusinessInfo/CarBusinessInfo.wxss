@@ -2,3 +2,136 @@
 /**
  * 以下轮子用来说明，设计是多么不规范！除此之外没有别的好处。反正不会影响效率，开发者请随意、
  */
+.carbusinessinfo {
+  background: #f2f2f2;
+  height: 100%; }
+  .carbusinessinfo .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 100rpx;
+    margin: auto 40rpx; }
+  .carbusinessinfo .h1_view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .carbusinessinfo .h1_view .h1_left {
+      width: 165rpx;
+      height: 1px;
+      background: #85ABE5;
+      position: relative; }
+      .carbusinessinfo .h1_view .h1_left:after {
+        content: "";
+        height: 10rpx;
+        width: 10rpx;
+        border-radius: 50%;
+        background: #85ABE5;
+        position: absolute;
+        right: -30rpx;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+    .carbusinessinfo .h1_view .h1_right {
+      width: 165rpx;
+      height: 1px;
+      background: #85ABE5;
+      position: relative; }
+      .carbusinessinfo .h1_view .h1_right:after {
+        content: "";
+        height: 10rpx;
+        width: 10rpx;
+        border-radius: 50%;
+        background: #85ABE5;
+        position: absolute;
+        left: -30rpx;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+  .carbusinessinfo .h1 {
+    font-weight: normal;
+    text-align: center;
+    color: #0B58CC;
+    font-size: 40rpx;
+    position: relative;
+    padding-top: 56rpx;
+    padding-bottom: 56rpx;
+    margin: auto 60rpx; }
+  .carbusinessinfo .title {
+    color: #666666;
+    font-size: 36rpx;
+    line-height: 72rpx;
+    text-align: left;
+    margin: 0; }
+  .carbusinessinfo .article {
+    color: #666666;
+    font-size: 24rpx;
+    line-height: 36rpx;
+    width: 263rpx;
+    letter-spacing: 5px; }
+  .carbusinessinfo ._top {
+    margin-top: 14rpx;
+    background: #fff; }
+  .carbusinessinfo ._bottom {
+    margin-top: 34rpx;
+    background: #fff;
+    margin-bottom: 120rpx;
+    padding-bottom: 50rpx; }
+  .carbusinessinfo .img1 {
+    width: 279rpx;
+    height: 241rpx; }
+  .carbusinessinfo .img2 {
+    width: 299rpx;
+    height: 240rpx; }
+  .carbusinessinfo .img3 {
+    width: 295rpx;
+    height: 204rpx; }
+  .carbusinessinfo ._ul {
+    padding-bottom: 71rpx; }
+    .carbusinessinfo ._ul ._li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 66rpx;
+      position: relative;
+      font-size: 28rpx;
+      line-height: 66rpx; }
+      .carbusinessinfo ._ul ._li:before {
+        content: attr(data-content);
+        width: 35rpx;
+        height: 35rpx;
+        line-height: 36rpx;
+        border-radius: 50%;
+        background-color: #FFBA00;
+        text-align: center;
+        color: #fffae6;
+        font-size: 24rpx;
+        margin-right: 23rpx;
+        margin-left: 40rpx; }
+  .carbusinessinfo ._submit {
+    height: 100rpx;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    background: #0b58cc;
+    text-align: center;
+    font-size: 36rpx;
+    line-height: 100rpx; }
+  .carbusinessinfo .bold {
+    color: #FFBA00;
+    font-weight: bold; }

@@ -1,3 +1,55 @@
 <view class="container carbusinessinfo">
-    
+    <view class="_top">
+        <view class="h1_view">
+            <view class="h1_left"></view>
+            <text class="h1">准入条件</text>
+            <view class="h1_right"></view>
+        </view>
+        <view class="block">
+            <view class="block_left">
+              <image src="../../image/BusinessInfo/BusinessInfo_2.png" class="img1"></image>
+            </view>
+            <view class="block_right">
+                <view class="title">公民条件</view>
+                <view class="article">有稳定工作及收入</view>
+            </view>
+        </view>
+
+        <view class="block">
+            <view class="block_left">
+                <view class="title">资产条件</view>
+                <view class="article">非营运车辆，车龄不超过10年；评估价不低于3万</view>
+            </view>
+            <view class="block_right">
+              <image src="../../image/BusinessInfo/BusinessInfo_3.png" class="img2"></image>
+            </view>
+        </view>
+
+        <view class="block">
+            <view class="block_left">
+              <image src="../../image/BusinessInfo/BusinessInfo_4.png" class="img3"></image>
+            </view>
+            <view class="block_right">
+                <view class="title">个人信誉</view>
+                <view class="article">借款人的信用记录正常。</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="_bottom">
+      <view class="h1_view">
+          <view class="h1_left"></view>
+          <text class="h1">服务特色</text>
+          <view class="h1_right"></view>
+      </view>
+      <view class="_ul">
+        <view class='_li' data-content="1">申请手续简单，押证押车可选。</view>
+        <view class='_li' data-content="2">放款快，提交资料后最快<text class="bold">1个工作日</text>内放款。</view>
+        <view class='_li' data-content="3">额度高，车辆评估价的<text class="bold">70%－150%</text>。</view>
+        <view class='_li' data-content="4">先息后本利息低至<text class="bold">1%</text>，等额本息利息低至<text class="bold">6厘</text>。</view>
+        <view class='_li' data-content="5">借款期限灵活，可选<text class="bold">1－24</text>个月。</view>
+        <view class='_li' data-content="6">还款方式灵活。</view>
+      </view>
+    </view>
+    <button class="_submit">马上申请</button>
 </view>

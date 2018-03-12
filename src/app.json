@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/CarBusinessInfo/CarBusinessInfo",
+    "pages/HouseBusinessInfo/HouseBusinessInfo",
     "pages/ResetPwd/ResetPwd",
     "pages/ForgetPwd/ForgetPwd",
     "pages/Register/Register",
@@ -12,9 +14,7 @@
     "pages/index/index",
     "pages/Borrow/Borrow",
     "pages/BorrowProgress/BorrowProgress",
-    "pages/CarBusinessInfo/CarBusinessInfo",
     "pages/CitySelect/CitySelect",
-    "pages/HouseBusinessInfo/HouseBusinessInfo",
     "pages/RegProtocol/RegProtocol",
     "pages/Repay/Repay",
     "pages/RepayInfo/RepayInfo",
