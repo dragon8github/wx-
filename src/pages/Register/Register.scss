@@ -9,3 +9,30 @@
 .form {
     padding: 30rpx;
 }
+
+.already {
+    width:100%;
+    text-align:center;
+    font-size: 24rpx;
+    color: #999999;
+    margin-top: 60rpx;
+
+    .already--blue {
+        color: #0e6ae7;
+    }
+}
+
+.buttomtext {
+    position: absolute;
+    bottom: 80rpx;
+    font-size: 24rpx;
+    color: #999999;
+    letter-spacing: 1rpx;
+    width:100%;
+    text-align:center;
+
+
+    .buttomtext--blue {
+        color: #0e6ae7;
+    }
+}

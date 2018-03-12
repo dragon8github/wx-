@@ -16,6 +16,10 @@ Page({
      }, 2000)
   },
 
+  login: function () {
+    wx.navigateTo({url: '/pages/Login/Login'})
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
