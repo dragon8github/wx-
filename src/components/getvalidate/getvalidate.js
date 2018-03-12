@@ -16,6 +16,8 @@
     // 这里是一个自定义方法
     start: function() {
       if (this.data.stop) { 
+         // 我不明白为什么小程序不支持传入this.函数作为参数。而必须传入匿名函数
+         // 不仅这里如此，其实使用setTimeout和setInterval时候也一样。
          this.triggerEvent("getvalidate", _ => this.startTime())
       }
     },
@@ -39,7 +41,7 @@
     },
     startTime: function() {
         // 我不明白为什么小程序不支持传入函数。而必须这样做
-        // 不仅这里如此，其实也不能将本组件的函数传到外部去？
+        // 不仅这里如此，其实使用triggerEvent时候也一样
         let val = setInterval(_ => this.update(), 1000);
         this.setData({
               // 开始循环执行update函数
