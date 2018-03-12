@@ -40,7 +40,6 @@
       }
     },
     startTime: function() {
-        console.log(123);
         // 我不明白为什么小程序不支持传入函数。而必须这样做
         // 不仅这里如此，其实使用triggerEvent时候也一样
         this.setData({

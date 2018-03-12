@@ -5,7 +5,7 @@
 
         <!-- input:text -->
         <view wx:if="{{ type === 'text' }}" class="form__inputwarp">
-            <input class="form__input" type="text" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
+            <input class="form__input" type="text" maxlength="{{ maxlength }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
             <view class="form__righticon" wx:if="{{ myvalue }}" bindtap="cleartext">
                 <image class="form__close" src="../../image/close.png"></image>
             </view>
@@ -13,7 +13,7 @@
         
         <!-- input:password -->
          <view wx:elif="{{ type === 'password' }}" class="form__inputwarp">
-              <input class="form__input" type="{{ pwdType }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
+              <input class="form__input" type="{{ pwdType }}" maxlength="{{ maxlength }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
               <view class="form__righticon" bindtap="eyeclick">
                   <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
                          src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
@@ -23,7 +23,7 @@
 
          <!-- input:slot -->
          <view wx:elif="{{ type === 'slot' }}" class="form__inputwarp">
-              <input class="form__input" type="{{ pwdType }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
+              <input class="form__input" type="text" maxlength="{{ maxlength }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
               <view class="form__righticon">
                   <slot name="righticon"></slot>
               </view>

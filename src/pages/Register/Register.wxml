@@ -19,10 +19,11 @@
         <field placeholder='验证码'
                id='validatefield'
                title="验证码"
+               maxlength="4"
                type="slot">
                <getvalidate slot='righticon' class="form__validate"  bind:getvalidate="getvalidate">获取验证码</getvalidate>
         </field>
 
-        <mybutton value="注册" bind:tapEvent='go' disable='{{ disable }}'></mybutton>
+        <mybutton value="注册"  bind:tapEvent='go' disable='{{ disable }}'></mybutton>
     </view>
 </view>

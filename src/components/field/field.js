@@ -25,6 +25,10 @@ Component({
       type: String,
       value: '',
     },
+    maxlength: {
+      type: Number,
+      value: '20'
+    }
   },
   data: {
     myvalue: '',
