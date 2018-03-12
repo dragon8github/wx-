@@ -1,3 +1,4 @@
-<view class="container getvalidate">
-    
+<view class="form__validate" bind:tap="start">
+    <view wx:if="{{ stop == true }}">获取验证码</view>
+    <view wx:else>（{{ mytimer }}）秒后重新获取</view>
 </view>

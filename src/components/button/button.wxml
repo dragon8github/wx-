@@ -1,6 +1,6 @@
 <view class="button">
     <button class="button--primary {{ disable ? 'is-disable' : '' }}" 
             bindtap="submit">
-            登录
+            {{ value }}
     </button>
 </view>

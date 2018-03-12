@@ -3,7 +3,7 @@
 
         <field placeholder='请输入手机号码' 
                id='userfield'
-               title="团贷网账号 / 手机号" 
+               title="手机号" 
                value="{{ username }}" 
                bind:keyupEvent="usernamekeyup">
         </field>

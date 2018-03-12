@@ -1,6 +1,11 @@
 {
-    "usingComponents": {},
+    "usingComponents": {
+        "field": "/components/field/field",
+        "mybutton": "/components/button/button",
+        "getvalidate": "/components/getvalidate/getvalidate"
+    },
 
-    "navigationBarTitleText": "register"
+
+    "navigationBarTitleText": "注册"
 
 }

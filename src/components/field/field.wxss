@@ -31,9 +31,15 @@
   border-bottom: 1rpx solid #e5e5e5;
   font-size: 28rpx;
   height: 88rpx;
-  background: #fff; }
+  background: #fff;
+  -webkit-transition: border .2s ease-in-out,background .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+  transition: border .2s ease-in-out,background .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+  transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+  transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out; }
+  .form .form__input:hover {
+    border-color: #0e6ae7; }
 
-.form .form__iconblock {
+.form .form__righticon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

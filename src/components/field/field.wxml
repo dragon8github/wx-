@@ -6,7 +6,7 @@
         <!-- input:text -->
         <view wx:if="{{ type === 'text' }}" class="form__inputwarp">
             <input class="form__input" type="text" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
-            <view class="form__iconblock" wx:if="{{ myvalue }}" bindtap="cleartext">
+            <view class="form__righticon" wx:if="{{ myvalue }}" bindtap="cleartext">
                 <image class="form__close" src="../../image/close.png"></image>
             </view>
         </view>
@@ -14,10 +14,18 @@
         <!-- input:password -->
          <view wx:elif="{{ type === 'password' }}" class="form__inputwarp">
               <input class="form__input" type="{{ pwdType }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
-              <view class="form__iconblock" bindtap="eyeclick">
+              <view class="form__righticon" bindtap="eyeclick">
                   <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
                          src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
                  </image>
+              </view>
+         </view>
+
+         <!-- input:slot -->
+         <view wx:elif="{{ type === 'slot' }}" class="form__inputwarp">
+              <input class="form__input" type="{{ pwdType }}" placeholder="{{ placeholder }}" bindinput="mykeyup" value="{{ myvalue }}" />
+              <view class="form__righticon">
+                  <slot name="righticon"></slot>
               </view>
          </view>
     </view>
@@ -30,7 +38,7 @@
            <view class="form__title {{ username ? 'form__title--show' : '' }}  {{ userError ? 'form__title--error' : '' }}">{{ userError ? userError : '团贷网账号 / 手机号' }}</view>
            <view class="form__inputwarp">
                <input class="form__input" type="text" placeholder="请输入手机号码" bindinput="usernamemykeyup" value="{{ username }}" />
-               <view class="form__iconblock" wx:if="{{ username }}" bindtap="cleartext">
+               <view class="form__righticon" wx:if="{{ username }}" bindtap="cleartext">
                    <image class="form__close" src="../../image/close.png"></image>
                </view>
            </view>
@@ -40,7 +48,7 @@
            <view class="form__title {{ pwd ? 'form__title--show' : '' }}">登录密码</view>
            <view class="form__inputwarp">
                <input class="form__input" type="{{ pwdType }}" placeholder="登录密码" bindinput="pwdmykeyup" />
-                <view class="form__iconblock" bindtap="eyeclick">
+                <view class="form__righticon" bindtap="eyeclick">
                     <image class="{{ pwdeye === 'open' ? 'form__openeye' : 'form__closeeye' }}"
                            src="../../image/{{ pwdeye === 'open' ? 'icon_eye' : 'icon_closeeye' }}.png">
                    </image>
@@ -92,7 +100,7 @@
         background: #fff;
     }
 
-    .form__iconblock {
+    .form__righticon {
         @include ycenter;
         z-index: 2;
         right: 0;

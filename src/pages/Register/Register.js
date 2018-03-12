@@ -7,6 +7,11 @@ Page({
     
   },
 
+  getvalidate: function (fn) {
+      console.log(fn.detail())
+      // this.selectComponent("#getvalidate").getvalidate()
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
