@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/**
+ * 以下轮子用来说明，设计是多么不规范！除此之外没有别的好处。反正不会影响效率，开发者请随意、
+ */
+.help {
+  display: flex;
+  justify-content: space-between;
+  background-image: -webkit-linear-gradient(330deg, #0372ef 0%, #0b88ff 100%), -webkit-linear-gradient(#ffffff, #ffffff);
+  background-image: linear-gradient(120deg, #0372ef 0%, #0b88ff 100%), linear-gradient(#ffffff, #ffffff);
+  width: 100%;
+  min-height: 290rpx;
+  padding: 55rpx 60rpx; }
+
+.helpleft {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  letter-spacing: 3rpx; }
+
+.helpleft__service {
+  font-size: 48rpx;
+  color: #ffffff; }
+
+.helpleft__phone {
+  font-size: 26rpx;
+  color: #ffffff; }
+
+.helpleft__time {
+  font-size: 26rpx;
+  color: #ffffff; }
+
+.helpright__image {
+  width: 140rpx;
+  height: 140rpx; }
+
+.FAQText {
+  background: #fff;
+  width: 100%;
+  height: 90rpx;
+  color: #222;
+  font-size: 28rpx;
+  padding-left: 28rpx;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 90rpx;
+  margin-bottom: 10rpx; }
+
+.bottom {
+  padding-bottom: 100rpx;
+  background: #fff; }
+
+.table {
+  text-align: center;
+  width: 100%;
+  border-left: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc; }
+  .table thead tr {
+    background-color: #f8f8f8 !important;
+    font-weight: bold; }
+  .table td {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1rpx solid #ccc;
+    border-right: 1rpx solid #ccc;
+    line-height: 80rpx; }
+    .table td:nth-child(1) {
+      text-align: left;
+      text-indent: 10rpx; }
+    .table td:nth-child(2) {
+      text-align: right;
+      padding-right: 15rpx; }
+    .table td:nth-child(3) {
+      text-align: right;
+      padding-right: 15rpx; }
+  .table tr:nth-child(2n+1) {
+    background-color: #fff; }
+  .table tr:nth-child(2n) {
+    background-color: #f8f8f8; }
+
+.mytable td {
+  word-break: keep-all;
+  font-size: 25rpx;
+  white-space: pre-wrap; }
+
+.main_list {
+  background: #fff;
+  font-size: 28rpx;
+  width: 100%;
+  overflow: hidden; }
+  .main_list li {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s height ease;
+    transition: .3s height ease;
+    height: 90rpx;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block; }
+    .main_list li .main_list_title {
+      position: relative;
+      color: #222;
+      height: 90rpx;
+      line-height: 90rpx;
+      text-indent: 88rpx; }
+      .main_list li .main_list_title:before {
+        content: '';
+        position: absolute;
+        width: 40rpx;
+        height: 40rpx;
+        background: url("../../assets/Help_4.png") no-repeat center 100%/100%;
+        left: 30rpx;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .main_list li .main_list_title i.arrows {
+        content: '';
+        position: absolute;
+        width: 13rpx;
+        height: 26rpx;
+        background: url("../../assets/Help_1.png") no-repeat center 100%/100%;
+        right: 30rpx;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+    .main_list li .main_list_text {
+      color: #666;
+      padding: 30rpx 60rpx;
+      line-height: 54rpx;
+      margin: 0;
+      overflow: visible; }
+      .main_list li .main_list_text h1 {
+        font-size: 40rpx;
+        font-weight: normal;
+        line-height: 80rpx; }
+    .main_list li.active i.arrows {
+      -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+      transform: translateY(-50%) rotate(90deg); }
+    .main_list li:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background: #E5E5E5;
+      top: 90rpx- 3rpx;
+      height: 1rpx;
+      left: 30rpx; }

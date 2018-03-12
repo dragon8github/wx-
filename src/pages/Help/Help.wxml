@@ -1,0 +1,129 @@
+<view class="container">
+
+      <view class="help">
+          <view class="helpleft">
+              <text class="helpleft__service">电话客服</text>
+              <text class="helpleft__phone">0769-22888877</text>
+              <text class="helpleft__time">服务时间：周一至周五9:00~18:00</text>
+          </view>
+          <view class="helpright">
+              <image class="helpright__image" src='./../../image/find/phone.png'></image>
+          </view>
+      </view>
+
+      <view class="FAQText"> 常见问题 </view>
+      <view class="bottom">
+         <view class="main_list" bind:tap="slide">
+           <view class="_li">
+             <view class="main_list_title">1、如何通过鸿特金服借款？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 注册鸿特金服，登录成功之后，在首页可查看详细业务类型，在适合的业务类型后点击【我要申请】按钮，根据页面指引填写相关资料，即可完成借款申请。
+             </view>
+           </view>
+           <view class="_li">
+             <view class="main_list_title">2、借款额度范围？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                一点车贷目前支持额度范围为2万-120万，鸿特微贷目前支持额度范围为10万-500万。
+             </view>
+           </view>
+           <view class="_li">
+             <view class="main_list_title">3、借款期限有哪些？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 鸿特金服支持1-48个月不等，先息后本、等额本息两种还款方式，具体以系统审批的期限为准。
+             </view>
+           </view>
+           <view class="_li">
+             <view class="main_list_title">4、利息是多少？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 产品在不同时期利息会进行调整，请以申请贷款时页面提示利率为准。
+             </view>
+           </view>
+
+           <view class="_li">
+             <view class="main_list_title">5、申请人有什么条件限制？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 <view>一点车贷</view>
+                 1. 中国公民或者企业法人，年龄18岁（含）至60岁（含）
+                 2. 非营运车辆，车龄不超过10年，评估价不低于2万
+                 3. 有稳定工作及收入
+                 4. 借款人的信用记录正常
+                 <view>鸿特微贷</view>
+                 1. 中国公民或者企业法人，年龄18岁（含）至60岁（含）
+                 2. 借款人在当地有房产且房产有一定的剩余价值
+                 3. 有稳定工作及收入
+                 4. 借款人的信用记录正常
+             </view>
+           </view>
+
+           <view class="_li">
+             <view class="main_list_title">6、贷款有地域限制吗？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 一点车贷和鸿特微贷部分地区分公司未支持相关业务
+             </view>
+           </view>
+
+           <view class="_li">
+             <view class="main_list_title">7、办理手续需要准备什么证件材料？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 <view>一点车贷</view>
+                   <table class="mytable">
+                       <tr> <td>必备资料：</td> <td>身份证及居住证（非本地户口）</td> </tr>
+                       <tr> <td></td> <td>行驶证、机动车登记证</td> </tr>
+                       <tr> <td></td> <td>车辆备用钥匙</td> </tr>
+                       <tr><td> </td> <td></td></tr>
+                       <tr> <td>补充资料：</td> <td>车辆保险单、交强险及商业险</td> </tr>
+                       <tr> <td></td> <td>客户本人名下银行卡、银行流水</td> </tr>
+                       <tr> <td></td> <td>营业执照或工作证明、购车发票、<br />租赁合同或房产证</td> </tr>
+                       <tr> <td></td> <td>功能公积金流水、社保缴费记录</td> </tr>
+                   </table>
+                 <view>鸿特微贷</view>
+                  <table class="mytable">
+                      <tr> <td>必备资料：</td> <td>借款人（夫妻）身份证，户口本</td> </tr>
+                      <tr> <td></td> <td>婚姻证明（结婚证、未婚证明等）</td> </tr>
+                      <tr> <td></td> <td>个人征信，夫妻银行流水（须原件）</td> </tr>
+                      <tr> <td></td> <td>房产证（或购房合同），土地证</td> </tr>
+                      <tr><td> </td> <td></td></tr>
+                      <tr> <td>补充资料：</td> <td>营业执照或工作证明、</td> </tr>
+                      <tr> <td></td> <td>购车发票、车辆登记证、</td> </tr>
+                      <tr> <td></td> <td>设备清单及发票，其他资产证明文件</td> </tr>
+                      <tr> <td></td> <td>同贷书、买卖合同、支付凭证等</td> </tr>
+                  </table>
+             </view>
+           </view>
+
+           <view class="_li">
+             <view class="main_list_title">8、申请多久之后可以放款？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 一点车贷：手续办理成功之后，最快2小时即可放款
+                 鸿特微贷：手续办理成功之后，最快1天即可放款
+                 如遇节假日可能有延迟
+             </view>
+           </view>
+
+
+           <view class="_li">
+             <view class="main_list_title">9、如何查看贷款结果？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 请在【我的→我的借款】中查看
+             </view>
+           </view>
+
+
+           <view class="_li">
+             <view class="main_list_title">10、代扣不成功的原因有哪些？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 1. 账户余额不足，导致代扣不成功；
+                 2. 单笔金额、单日限额超出银行限制；
+                 3. 持卡人信息有误，银行卡与本人身份证不符、与银行预留手机号码不符等不一致的情况均会导致代扣失败；
+             </view>
+           </view>
+
+           <view class="_li">
+             <view class="main_list_title">11、为何有时候不能手动还款？<view class="arrows"></view></view>
+             <view class="main_list_text">
+                 由于代扣接口对扣款失败次数做了严格的限制，每天每个客户扣款失败次数不能超过3次，因此如果一个客户扣款失败次数达到三次（手动还款及系统自动还款均包括），将不再继续扣款（即使客户卡里有钱）。只能24小时后再进行还款。
+             </view>
+           </view>
+         </view>
+      </view>
+</view>

@@ -1,0 +1,179 @@
+@import "../../sass/variables.scss";
+@import "../../sass/helper.scss";
+
+.help {
+    @include flex(space-between);
+    background-image: linear-gradient(120deg, #0372ef 0%, #0b88ff 100%), linear-gradient(#ffffff, #ffffff); 
+    width: 100%;
+    min-height: 290rpx;
+    padding: 55rpx 60rpx;
+}
+
+.helpleft {
+    @include flex(space-around, false, column);
+    letter-spacing: 3rpx;
+}
+.helpleft__service {
+    @include f48;
+    color: #ffffff;
+}
+.helpleft__phone {
+    @include f26;
+    color: #ffffff;
+}
+.helpleft__time {
+    @include f26;
+    color: #ffffff;
+}
+
+.helpright {}
+.helpright__image {
+    @include size(140rpx, 140rpx);
+}
+
+.FAQText {
+  background: #fff;
+  width: 100%;
+  height: 90rpx;
+  color: #222;
+  font-size: 28rpx;
+  padding-left:28rpx;
+  box-sizing: border-box;
+  line-height: 90rpx;
+  margin-bottom: 10rpx;
+}
+
+.bottom {
+    padding-bottom: 100rpx;
+    background: #fff;
+}
+
+.table {
+  text-align: center;
+  width: 100%;
+  border-left: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+
+  thead tr {
+      background-color: #f8f8f8 !important;
+      font-weight: bold;
+  }
+
+  td {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1rpx solid #ccc;
+    border-right: 1rpx solid #ccc;
+    line-height: 80rpx;
+
+    &:nth-child(1) {
+      text-align: left;
+      text-indent: 10rpx;
+    }
+
+    &:nth-child(2) {
+      text-align: right;
+      padding-right: 15rpx;
+    }
+
+    &:nth-child(3) {
+      text-align: right;
+      padding-right: 15rpx;
+    }
+  }
+
+  tr:nth-child(2n+1) {
+      background-color: #fff;
+
+  }
+
+  tr:nth-child(2n) {
+      background-color: #f8f8f8;
+  }
+}
+
+.mytable {
+    td {
+          word-break: keep-all;
+          font-size: 25rpx;
+          white-space: pre-wrap;
+    }
+}
+
+.main_list {
+    background: #fff;
+    font-size: 28rpx;
+    width: 100%;
+    overflow: hidden;
+
+    li {
+        position: relative;
+        overflow: hidden;
+        transition: .3s height ease;
+        height: 90rpx;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+
+
+        .main_list_title {
+          position: relative;
+          color: #222;
+          height: 90rpx;
+          line-height: 90rpx;
+          text-indent: 88rpx;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 40rpx;
+            height: 40rpx;
+            background: url('../../assets/Help_4.png') no-repeat center 100% / 100%;
+            left: 30rpx;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          i.arrows {
+            content: '';
+            position: absolute;
+            width: 13rpx;
+            height: 26rpx;
+            background: url('../../assets/Help_1.png') no-repeat center 100% / 100%;
+            right: 30rpx;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        .main_list_text {
+          color:#666;
+          padding: 30rpx 60rpx;
+          line-height: 27rpx* 2;
+          margin:0;
+          overflow: visible;
+
+          h1 {
+            font-size: 40rpx;
+            font-weight: normal;
+            line-height: 80rpx;
+          }
+        }
+
+        &.active {
+          i.arrows {
+            transform: translateY(-50%) rotate(90deg);
+          }
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          background: #E5E5E5;
+          top: 90rpx- 3rpx;
+          height: 1rpx;
+          left: 30rpx;
+        }
+    }
+}

@@ -7,28 +7,28 @@
     width: 100%;
     min-height: 290rpx;
     padding: 55rpx 60rpx;
-}
 
-.helpleft {
-    @include flex(space-around, false, column);
-    letter-spacing: 3rpx;
-}
-.helpleft__service {
-    @include f48;
-    color: #ffffff;
-}
-.helpleft__phone {
-    @include f26;
-    color: #ffffff;
-}
-.helpleft__time {
-    @include f26;
-    color: #ffffff;
-}
+    .helpleft {
+        @include flex(space-around, false, column);
+        letter-spacing: 3rpx;
+    }
+    .helpleft__service {
+        @include f48;
+        color: #ffffff;
+    }
+    .helpleft__phone {
+        @include f26;
+        color: #ffffff;
+    }
+    .helpleft__time {
+        @include f26;
+        color: #ffffff;
+    }
 
-.helpright {}
-.helpright__image {
-    @include size(140rpx, 140rpx);
+    .helpright {}
+    .helpright__image {
+        @include size(140rpx, 140rpx);
+    }
 }
 
 .findcenter {

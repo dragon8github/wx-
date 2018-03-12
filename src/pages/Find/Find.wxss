@@ -10,28 +10,23 @@
   width: 100%;
   min-height: 290rpx;
   padding: 55rpx 60rpx; }
-
-.helpleft {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  letter-spacing: 3rpx; }
-
-.helpleft__service {
-  font-size: 48rpx;
-  color: #ffffff; }
-
-.helpleft__phone {
-  font-size: 26rpx;
-  color: #ffffff; }
-
-.helpleft__time {
-  font-size: 26rpx;
-  color: #ffffff; }
-
-.helpright__image {
-  width: 140rpx;
-  height: 140rpx; }
+  .help .helpleft {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    letter-spacing: 3rpx; }
+  .help .helpleft__service {
+    font-size: 48rpx;
+    color: #ffffff; }
+  .help .helpleft__phone {
+    font-size: 26rpx;
+    color: #ffffff; }
+  .help .helpleft__time {
+    font-size: 26rpx;
+    color: #ffffff; }
+  .help .helpright__image {
+    width: 140rpx;
+    height: 140rpx; }
 
 .findcenter {
   display: flex;

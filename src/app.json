@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/Help/Help",
     "pages/CarBusinessInfo/CarBusinessInfo",
     "pages/HouseBusinessInfo/HouseBusinessInfo",
     "pages/ResetPwd/ResetPwd",
