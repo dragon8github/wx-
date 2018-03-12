@@ -1,13 +1,11 @@
 <view class="container login">
     <view class="form">
-
         <field placeholder='请输入手机号码' 
                id='userfield'
                title="手机号" 
                value="{{ username }}" 
                bind:keyupEvent="usernamekeyup">
         </field>
-
         <field placeholder='登录密码'
                id='pwdfield'
                title="登录密码"
@@ -15,7 +13,6 @@
                bind:keyupEvent="pwdkeyup"
                type="password">
         </field>
-
         <mybutton value="登录" bind:tapEvent='go' disable='{{ disable }}'></mybutton>
     </view>
 </view>

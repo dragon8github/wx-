@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/ResetPwd/ResetPwd",
+    "pages/ForgetPwd/ForgetPwd",
     "pages/Register/Register",
     "pages/Login/Login",
     "pages/Fast/Fast",
@@ -12,14 +14,11 @@
     "pages/BorrowProgress/BorrowProgress",
     "pages/CarBusinessInfo/CarBusinessInfo",
     "pages/CitySelect/CitySelect",
-    "pages/ForgetPwd/ForgetPwd",
     "pages/HouseBusinessInfo/HouseBusinessInfo",
     "pages/RegProtocol/RegProtocol",
     "pages/Repay/Repay",
     "pages/RepayInfo/RepayInfo",
-    "pages/ResetPwd/ResetPwd",
     "pages/Status/Status",
-
     "help/component/index",
     "help/component/component-pages/action-sheet/action-sheet",
     "help/component/component-pages/audio/audio",

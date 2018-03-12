@@ -1,6 +1,10 @@
 {
-    "usingComponents": {},
+    "usingComponents": {
+        "field": "/components/field/field",
+        "mybutton": "/components/button/button",
+        "getvalidate": "/components/getvalidate/getvalidate"
+    },
 
-    "navigationBarTitleText": "forgetpwd"
+    "navigationBarTitleText": "忘记密码"
 
 }

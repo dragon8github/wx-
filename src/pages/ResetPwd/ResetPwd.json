@@ -1,6 +1,9 @@
 {
-    "usingComponents": {},
+    "usingComponents": {
+        "field": "/components/field/field",
+        "mybutton": "/components/button/button"
+    },
 
-    "navigationBarTitleText": "resetpwd"
+    "navigationBarTitleText": "重置密码"
 
 }

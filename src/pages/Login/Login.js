@@ -28,13 +28,9 @@ Page({
 
   isDisable: function () {
     if (this.data.username !== '' && this.data.pwd !== '') {
-      this.setData({
-          disable: false
-      })
+      this.setData({ disable: false })
     } else {
-      this.setData({
-          disable: true
-      });
+      this.setData({ disable: true })
     }
   },
 
